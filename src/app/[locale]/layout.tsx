@@ -45,6 +45,15 @@ export default async function LocaleLayout({
         <link rel='apple-touch-icon' href='/favicon.svg' />
         <link rel='mask-icon' href='/favicon.svg' color='#000000' />
         <meta name='theme-color' content='#000000' />
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-41SENDFD2M"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-41SENDFD2M');
+      </script>
       </head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
