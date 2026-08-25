@@ -26,7 +26,7 @@
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
-    --radius: 0.5rem;
+    --radius: 1rem;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -68,6 +68,7 @@
   }
   body {
     @apply scroll-smooth bg-background text-sm text-foreground md:text-base;
+    background: #061e1c;
   }
   .react-datepicker-wrapper {
     display: block !important;
@@ -94,11 +95,14 @@
 
   .card-gradient-border {
     position: relative;
-    @apply rounded-lg bg-[#ccc]/10;
+    @apply rounded-3xl bg-white/[0.055];
+    box-shadow:
+      0 24px 80px rgba(0, 0, 0, 0.24),
+      inset 0 1px 0 rgba(255, 255, 255, 0.06);
   }
 
   .card-gradient-border::before {
-    @apply -z-50 rounded-xl;
+    @apply rounded-3xl;
     content: '';
     position: absolute;
     inset: 0;
@@ -107,8 +111,9 @@
     /* color of border */
     background: linear-gradient(
         to right,
-        rgba(255, 255, 255, 1),
-        rgba(255, 255, 255, 0)
+        rgba(124, 213, 196, 0.55),
+        rgba(255, 184, 78, 0.18),
+        rgba(255, 255, 255, 0.05)
       )
       border-box;
 
@@ -153,4 +158,19 @@ g[filter] {
 .bg-poster {
   box-shadow: #59ada8bf 0px 0px 20px 10px;
   border-radius: 1.5rem;
+}
+
+::selection {
+  background: #ffb84e;
+  color: #061e1c;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

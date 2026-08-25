@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "IT Consultant Challenge | Sáng tạo, đổi mới, chuyển đổi số một cách hiệu quả",
-    "description": "T Consultant Challenge là một cuộc thi theo nhóm nơi người tham gia sẽ nhập vai làm một IT Consultant thực thụ. Mỗi đội gồm bốn thành viên và một người hướng dẫn giàu kinh nghiệm, đồng hành cùng nhau giải quyết một vấn đề thực tiễn do Ban tổ chức đưa ra. Từ việc phân tích vấn đề, đề xuất giải pháp khả thi, cho đến việc trình bày ý tưởng một cách thuyết phục, cuộc thi đòi hỏi tinh thần đồng đội, khả năng tư duy phản biện sắc bén và kỹ năng giải quyết vấn đề sáng tạo."
+    "title": "IT Consultant Challenge 2026 | Prompt to Production",
+    "description": "Cuộc thi theo đội, nơi người tham gia giải quyết bài toán kinh doanh thực tế bằng các giải pháp số có trách nhiệm."
   },
   "root": {
     "names": {
@@ -19,15 +19,17 @@
       "organizers": "Đơn vị tổ chức"
     },
     "hero": {
-      "subTitle": "Thử thách ý tưởng công nghệ",
-      "time": "Nguyên ngày thứ 7, 25/10/2025, tại văn phòng Netcompany.",
+      "subTitle": "PROMPT TO PRODUCTION · 2026",
+      "time": "Từ bài toán kinh doanh đến sản phẩm số hoạt động được",
       "buttonTitle": "Đăng ký ngay"
     },
     "about": {
       "title": "IT Consultant Challenge là gì?",
-      "sectionTitle": "Cuộc thi IT Consultant Challenge",
+      "sectionTitle": "Prompt to Production",
       "organizers": "Đơn vị tổ chức",
       "eventPartner": "Đối tác sự kiện",
+      "summary": "Nhập vai IT Consultant: hiểu bài toán kinh doanh, xây dựng sản phẩm, thích ứng với thay đổi và thuyết trình giải pháp.",
+      "highlights": ["Đội 3 thành viên", "Dự án thực tế", "AI có trách nhiệm"],
       "description": [
         "<extrabold>IT Consultant Challenge</extrabold>  là một cuộc thi theo nhóm nơi người tham gia sẽ nhập vai làm một IT Consultant thực thụ. Mỗi đội gồm bốn thành viên và một người hướng dẫn giàu kinh nghiệm, đồng hành cùng nhau giải quyết một vấn đề thực tiễn do Ban tổ chức đưa ra. Từ việc phân tích vấn đề, đề xuất giải pháp khả thi, cho đến việc trình bày ý tưởng một cách thuyết phục, cuộc thi đòi hỏi tinh thần đồng đội, khả năng tư duy phản biện sắc bén và kỹ năng giải quyết vấn đề sáng tạo.",
         "Sự kiện được phối hợp thực hiện bởi Công ty {netcompanyName} Việt Nam và Cộng đồng Tech dành cho các bạn trẻ {codeMelyName}."
@@ -36,10 +38,11 @@
       "workshop": "[WORKSHOP] CHUYỆN NGHỀ \"IT CONSULTANT\" – KHI KỸ SƯ PHẦN MỀM BƯỚC VÀO THẾ GIỚI TƯ VẤN CÔNG NGHỆ",
       "whoCanJoinQuestion": "<bold>Hãy tham gia ngay khi bạn:</bold>",
       "whoCanJoinAnswers": [
-        "Là sinh viên từ năm 2 đến năm 4 đang theo học CNTT, Kĩ Thuật phần mềm, Khoa học Máy tính từ các trường Đại học trên địa bàn thành phố Hồ Chí Minh.",
-        "Có Tiếng Anh là một điểm mạnh.",
-        "Có hứng thú trong việc tìm hiểu vai trò của IT Consultant.",
-        "Muốn gặp gỡ bạn bè mới và các anh, chị trong nghề."
+        "Tò mò và muốn khám phá vai trò của một IT Consultant.",
+        "Yêu thích giải quyết bài toán kinh doanh thực tế bằng công nghệ.",
+        "Đam mê phát triển phần mềm và đổi mới số.",
+        "Muốn thực hành xây dựng giải pháp với AI một cách có trách nhiệm.",
+        "Có kỹ năng tiếng Anh."
       ]
     },
     "rules": {
@@ -54,6 +57,16 @@
     },
     "timeline": {
       "title": "Mốc thời gian",
+      "pending": "Từ ngày khởi động đến vòng bàn giao cuối cùng — theo dõi toàn bộ hành trình cuộc thi 2026.",
+      "events": [
+        { "date": "1/10", "label": "Khởi động sự kiện" },
+        { "date": "19/10", "label": "Vòng 1: Discover" },
+        { "date": "26/10", "label": "Hạn nộp Vòng 1" },
+        { "date": "2/11", "label": "Vòng 2: Build" },
+        { "date": "19/11", "label": "Hạn nộp Vòng 2" },
+        { "date": "16/11", "label": "Yêu cầu thay đổi" },
+        { "date": "21/11", "label": "Vòng 3: Deliver" }
+      ],
       "note": "(*) Sự kiện diễn ra nguyên ngày 25/10/2025.",
       "journey": {
         "title": "Hành trình cuộc thi",
@@ -74,9 +87,13 @@
       }
     },
     "prizes": {
-      "title": "Giải thưởng lên đến 100 triệu VNĐ",
-      "note": "(*) Giải thưởng hiện kim sẽ được trao dưới dạng Got It.",
-      "more": "Ngoài ra, mỗi thành viên trong top 3 đội thắng cuộc sẽ nhận học bổng 20% đến từ EngineerPro trị giá lên đến 10 triệu đồng."
+      "title": "Giải thưởng",
+      "totalLabel": "Tổng giá trị giải thưởng",
+      "totalAmount": "105 triệu VNĐ",
+      "placements": ["Quán quân", "Á quân 1", "Á quân 2"],
+      "amounts": ["60 triệu VNĐ", "30 triệu VNĐ", "15 triệu VNĐ"],
+      "note": "Giải thưởng hiện kim sẽ được trao dưới dạng e-voucher Got It.",
+      "more": ""
     },
     "timeCounter": {
       "title": "Thời hạn đăng ký",
@@ -151,7 +168,7 @@
         "email": {
           "label": "Email"
         },
-        "note": "(*) BTC sẽ tự ghép thêm thành viên trong trường hợp nhóm bạn chưa đủ người nhé. Số lượng mỗi đội là 4 thành viên."
+        "note": "(*) Mỗi đội thi gồm tổng cộng 3 thành viên."
       },
       "submit": "Đăng ký",
       "success": {
@@ -217,6 +234,7 @@
       "title": "Recap 2024",
       "subtitle": "Xem lại những khoảnh khắc đáng nhớ của IT Consultant Challenge 2024"
     },
+    "faqLink": "Câu hỏi thường gặp",
     "footer": {
       "contact": "Liên hệ",
       "followUs": "Theo dõi chúng tôi tại"

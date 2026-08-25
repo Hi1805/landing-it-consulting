@@ -7,8 +7,6 @@ import BlurFade from './ui/blur-fade';
 import AppCard from './ui/AppCard';
 import { isMobile } from 'react-device-detect';
 import { gotoRegistration } from '@/lib/utils';
-import CountdownTimer from './CountdownTimer';
-import { REGISTRATION_CLOSE_DATE } from '@/constants';
 import { LocaleProps } from '@/@types';
 
 const Hero = ({ locale }: LocaleProps) => {
@@ -36,11 +34,6 @@ const Hero = ({ locale }: LocaleProps) => {
                 {t('hero.time')}
               </p>
             </div>
-          </BlurFade>
-
-          {/* Countdown Timer */}
-          <BlurFade delay={0.6}>
-            <CountdownTimer closeDate={REGISTRATION_CLOSE_DATE} />
           </BlurFade>
 
           <BlurFade delay={0.7}>

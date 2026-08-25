@@ -1,10 +1,6 @@
-import React, { useEffect, useRef } from 'react';
-import GradualSpacing from './ui/gradual-spacing';
 import { SECTION_IDS } from '@/constants';
-import RulesMobile from '@/assets/RulesMobile';
-import RulesDesktop from '@/assets/RulesDesktop';
+import { ArrowRight, Compass, Hammer, Presentation } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { Tooltip } from 'react-tooltip';
 
 interface RulesProps {
   locale?: string;
@@ -12,105 +8,47 @@ interface RulesProps {
 
 const Rules = ({ locale }: RulesProps) => {
   const t = useTranslations('root');
-  const ruleSectionRef = useRef<HTMLDivElement>(null);
-
-  const points = [
-    {
-      id: 'url(#filter28_i_1076_7)',
-      description: t('rules.description.0'),
-    },
-    {
-      id: 'url(#filter29_i_1076_7)',
-      description: t('rules.description.0'),
-    },
-    {
-      id: 'url(#filter26_i_1076_7)',
-      description: t('rules.description.1'),
-    },
-    {
-      id: 'url(#filter27_i_1076_7)',
-      description: t('rules.description.1'),
-    },
-    {
-      id: 'url(#filter30_i_1076_7)',
-      description: t('rules.description.2'),
-    },
-    {
-      id: 'url(#filter31_i_1076_7)',
-      description: t('rules.description.2'),
-    },
-    {
-      id: 'url(#filter32_i_1076_7)',
-      description: t('rules.description.3'),
-    },
-    {
-      id: 'url(#filter33_i_1076_7)',
-      description: t('rules.description.3'),
-    },
-    {
-      id: 'url(#filter28_i_1012_7)',
-      description: t('rules.description.0'),
-    },
-    {
-      id: 'url(#filter29_i_1012_7)',
-      description: t('rules.description.0'),
-    },
-    {
-      id: 'url(#filter26_i_1012_7)',
-      description: t('rules.description.1'),
-    },
-    {
-      id: 'url(#filter27_i_1012_7)',
-      description: t('rules.description.1'),
-    },
-    {
-      id: 'url(#filter30_i_1012_7)',
-      description: t('rules.description.2'),
-    },
-    {
-      id: 'url(#filter31_i_1012_7)',
-      description: t('rules.description.2'),
-    },
-    {
-      id: 'url(#filter32_i_1012_7)',
-      description: t('rules.description.3'),
-    },
-    {
-      id: 'url(#filter33_i_1012_7)',
-      description: t('rules.description.3'),
-    },
-  ];
+  const icons = [Compass, Hammer, Presentation];
   return (
-    <div className='container px-4'>
-      <div
-        className='card-gradient-border mt-14 rounded-lg px-4 py-3 shadow-2xl backdrop-blur-sm md:mt-24 md:px-20 md:py-8 lg:py-10'
-        id={SECTION_IDS.RULES}
-      >
-        <div className='gap-10 lg:flex'>
-          <div className='col-span-4 flex max-lg:justify-center lg:col-span-1'>
-            <GradualSpacing
-              text={t('rules.title')}
-              className='mb-3 font-montserrat text-3xl font-extrabold uppercase !text-primary md:text-5xl'
-            />
-          </div>
-          <div className='col-span-4 lg:col-span-3'>
-            <p className='text-justify'>&quot;{t('rules.content')}&quot;</p>
-          </div>
-        </div>
-        <div className='relative h-max w-full select-none' ref={ruleSectionRef}>
-          <RulesDesktop className='hidden w-full sm:block' locale={locale} />
-          <RulesMobile className='w-full sm:hidden' locale={locale} />
-          {points.map((point) => (
-            <Tooltip
-              className='max-w-80 text-wrap text-justify'
-              key={point.id}
-              anchorSelect={`g[filter="${point.id}"]`}
-              content={point.description}
-            />
-          ))}
-        </div>
+    <section className='container px-4 pt-20 md:pt-28' id={SECTION_IDS.RULES}>
+      <div className='mb-10 text-center'>
+        <p className='mb-3 text-xs font-bold uppercase tracking-[.2em] text-secondary'>
+          Prompt to Production
+        </p>
+        <h2 className='font-montserrat text-3xl font-extrabold uppercase text-primary md:text-5xl'>
+          {t('timeline.journey.title')}
+        </h2>
       </div>
-    </div>
+      <div className='grid gap-4 lg:grid-cols-3'>
+        {[0, 1, 2].map((index) => {
+          const Icon = icons[index];
+          return (
+            <article
+              className='relative rounded-3xl border border-white/10 bg-white/[.045] p-7 shadow-2xl md:p-8'
+              key={index}
+            >
+              <div className='mb-6 flex items-center justify-between'>
+                <div className='bg-secondary/10 flex h-12 w-12 items-center justify-center rounded-2xl text-secondary'>
+                  <Icon className='h-6 w-6' />
+                </div>
+                <span className='font-montserrat text-4xl font-extrabold text-white/10'>
+                  0{index + 1}
+                </span>
+              </div>
+              <h3 className='mb-4 text-xl font-bold text-primary'>
+                {t(`timeline.journey.rounds.${index}.title`)}
+              </h3>
+              <p className='text-sm leading-7 text-white/70'>
+                {t(`timeline.journey.rounds.${index}.description`)}
+              </p>
+              {index < 2 && (
+                <ArrowRight className='text-secondary/50 absolute -right-5 top-1/2 z-10 hidden h-6 w-6 lg:block' />
+              )}
+            </article>
+          );
+        })}
+      </div>
+    </section>
   );
 };
 

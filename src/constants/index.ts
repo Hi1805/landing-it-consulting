@@ -12,5 +12,7 @@ export enum SECTION_IDS {
   VIDEO_RECAP = 'video-recap',
 }
 
-export const REGISTRATION_CLOSE_DATE = new Date('2025-10-22T17:00:00Z');
-export const EVENT_START_DATE = new Date('2025-10-18T17:00:00Z'); //19/10/2025
+// Confirmations are sent until before 19 October 2026.
+export const REGISTRATION_CLOSE_DATE = new Date('2026-10-18T17:00:00Z');
+// The official event date has not been announced yet.
+export const EVENT_START_DATE = REGISTRATION_CLOSE_DATE;

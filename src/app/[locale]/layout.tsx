@@ -1,22 +1,9 @@
 import type { Metadata } from 'next';
-import { Inter, Montserrat } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 
 import 'react-toastify/dist/ReactToastify.css';
 import '../../styles/globals.css';
-
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800', '900'],
-  variable: '--font-inter',
-});
-
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800', '900'],
-  variable: '--font-montserrat',
-});
 
 export default async function LocaleLayout({
   children,
@@ -40,7 +27,7 @@ export default async function LocaleLayout({
         <link rel='mask-icon' href='/favicon.svg' color='#000000' />
         <meta name='theme-color' content='#000000' />
       </head>
-      <body className={inter.className}>
+      <body className='font-inter'>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

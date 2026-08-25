@@ -21,8 +21,8 @@ const Highlights = () => {
   ];
 
   return (
-    <div className='container px-4 py-16 md:py-24' id={SECTION_IDS.HIGHLIGHTS}>
-      <h2 className='mb-4 text-center font-montserrat text-3xl font-extrabold uppercase text-[#FFB84E] md:mb-6 md:text-5xl'>
+    <div className='container px-4 py-20 md:py-32' id={SECTION_IDS.HIGHLIGHTS}>
+      <h2 className='mb-4 text-center font-montserrat text-3xl font-extrabold uppercase tracking-tight text-primary md:mb-6 md:text-5xl'>
         {t('highlights.title')}
       </h2>
 
@@ -33,12 +33,11 @@ const Highlights = () => {
       <VideoRecap />
 
       {/* Row 1 - 4 ảnh */}
-      <div className='mb-6 mt-12 grid grid-cols-4 gap-3 md:gap-6'>
+      <div className='mb-4 mt-12 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4'>
         {/* Ảnh 1 */}
         <div className='col-span-1'>
           <div
-            className='group relative h-full min-h-[120px] cursor-pointer overflow-hidden rounded-2xl border-4 border-white shadow-2xl md:min-h-[280px]'
-            style={{ transform: 'rotate(-3deg)' }}
+            className='group relative h-full min-h-[180px] cursor-pointer overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_50px_rgba(0,0,0,.25)] md:min-h-[280px]'
             onClick={() => setSelectedImage(0)}
           >
             <Image
@@ -54,8 +53,7 @@ const Highlights = () => {
         {/* Ảnh 2 */}
         <div className='col-span-1'>
           <div
-            className='group relative h-full min-h-[120px] cursor-pointer overflow-hidden rounded-2xl border-4 border-white shadow-2xl md:min-h-[280px]'
-            style={{ transform: 'rotate(2deg)' }}
+            className='group relative h-full min-h-[180px] cursor-pointer overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_50px_rgba(0,0,0,.25)] md:min-h-[280px]'
             onClick={() => setSelectedImage(1)}
           >
             <Image
@@ -71,8 +69,7 @@ const Highlights = () => {
         {/* Ảnh 3 */}
         <div className='col-span-1'>
           <div
-            className='group relative h-full min-h-[120px] cursor-pointer overflow-hidden rounded-2xl border-4 border-white shadow-2xl md:min-h-[280px]'
-            style={{ transform: 'rotate(-2deg)' }}
+            className='group relative h-full min-h-[180px] cursor-pointer overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_50px_rgba(0,0,0,.25)] md:min-h-[280px]'
             onClick={() => setSelectedImage(2)}
           >
             <Image
@@ -88,8 +85,7 @@ const Highlights = () => {
         {/* Ảnh 4 */}
         <div className='col-span-1'>
           <div
-            className='group relative h-full min-h-[120px] cursor-pointer overflow-hidden rounded-2xl border-4 border-white shadow-2xl md:min-h-[280px]'
-            style={{ transform: 'rotate(3deg)' }}
+            className='group relative h-full min-h-[180px] cursor-pointer overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_50px_rgba(0,0,0,.25)] md:min-h-[280px]'
             onClick={() => setSelectedImage(3)}
           >
             <Image
@@ -104,11 +100,11 @@ const Highlights = () => {
       </div>
 
       {/* Row 2 - 3 ảnh */}
-      <div className='grid grid-cols-3 gap-3 md:gap-6'>
+      <div className='grid grid-cols-1 gap-3 sm:grid-cols-3 md:gap-4'>
         {/* Ảnh 5 */}
         <div className='col-span-1'>
           <div
-            className='group relative h-full min-h-[150px] cursor-pointer overflow-hidden rounded-2xl border-4 border-white shadow-2xl md:min-h-[320px]'
+            className='group relative h-full min-h-[240px] cursor-pointer overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_50px_rgba(0,0,0,.25)] md:min-h-[320px]'
             // style={{ transform: 'rotate(2deg)' }}
             onClick={() => setSelectedImage(4)}
           >
@@ -125,7 +121,7 @@ const Highlights = () => {
         {/* Ảnh 6 */}
         <div className='col-span-1'>
           <div
-            className='group relative h-full min-h-[150px] cursor-pointer overflow-hidden rounded-2xl border-4 border-white shadow-2xl md:min-h-[320px]'
+            className='group relative h-full min-h-[240px] cursor-pointer overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_50px_rgba(0,0,0,.25)] md:min-h-[320px]'
             // style={{ transform: 'rotate(-2deg)' }}
             onClick={() => setSelectedImage(5)}
           >
@@ -142,7 +138,7 @@ const Highlights = () => {
         {/* Ảnh 7 */}
         <div className='col-span-1'>
           <div
-            className='group relative h-full min-h-[150px] cursor-pointer overflow-hidden rounded-2xl border-4 border-white shadow-2xl md:min-h-[320px]'
+            className='group relative h-full min-h-[240px] cursor-pointer overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_50px_rgba(0,0,0,.25)] md:min-h-[320px]'
             // style={{ transform: 'rotate(3deg)' }}
             onClick={() => setSelectedImage(6)}
           >

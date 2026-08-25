@@ -4,131 +4,102 @@ import { useTranslations } from 'next-intl';
 import { SECTION_IDS } from '@/constants';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { Check } from 'lucide-react';
 
 const About = () => {
   const t = useTranslations('root');
 
   return (
-    <div
-      className='container border-2 border-transparent px-4 py-16 md:py-24'
-      id={SECTION_IDS.ABOUT}
-    >
-      {/* Header Section */}
-      <div className='mb-12 flex flex-col items-center justify-between gap-8 md:flex-row md:gap-12'>
-        {/* Organizers */}
-        <div className='flex flex-1 flex-col items-center'>
-          <div className='mb-6 inline-block skew-x-[-20deg] border border-[#80FFF7] px-8 py-2'>
-            <span className='font-montserrat text-lg font-bold uppercase text-white md:text-xl'>
-              {t('about.organizers')}
-            </span>
-          </div>
-          <div className='flex items-center gap-6'>
+    <div className='container px-4 py-20 md:py-28' id={SECTION_IDS.ABOUT}>
+      <div className='mb-10 grid overflow-hidden rounded-3xl border border-white/10 bg-white/[.035] md:grid-cols-12'>
+        <div className='flex min-h-40 flex-col items-center justify-center border-b border-white/10 p-6 md:col-span-6 md:border-b-0 md:border-r md:p-8'>
+          <span className='mb-5 text-xs font-bold uppercase tracking-[.2em] text-secondary'>
+            {t('about.organizers')}
+          </span>
+          <div className='flex items-center justify-center gap-8'>
             <Image
               src='/companies/codemely.png'
               alt='Code MeLy'
               width={120}
               height={60}
-              className='h-[100px] w-24 object-contain md:w-32'
+              className='h-14 w-28 object-contain md:w-32'
             />
             <Image
               src='/companies/netcompany.png'
               alt='Netcompany'
               width={160}
               height={60}
-              className='h-[100px] w-32 object-contain md:w-40'
+              className='h-14 w-36 object-contain md:w-40'
             />
           </div>
         </div>
 
-        {/* Event Partner */}
-        <div className='flex flex-1 flex-col items-center'>
-          <div className='mb-6 inline-block skew-x-[-20deg] border border-[#80FFF7] px-8 py-2'>
-            <span className='font-montserrat text-lg font-bold uppercase text-white md:text-xl'>
-              {t('about.eventPartner')}
-            </span>
-          </div>
-          <div className='flex flex-wrap items-center justify-center gap-6'>
+        <div className='flex min-h-40 flex-col items-center justify-center p-6 md:col-span-6 md:p-8'>
+          <span className='mb-5 text-xs font-bold uppercase tracking-[.2em] text-secondary'>
+            {t('about.eventPartner')}
+          </span>
+          <div className='grid w-full grid-cols-2 place-items-center gap-5 sm:grid-cols-4'>
             <Image
               src='/companies/engineerpro.png'
               alt='engineerpro'
               width={120}
               height={60}
-              className='h-[100px] w-24 object-contain md:w-32'
+              className='h-11 w-24 object-contain'
             />
             <Image
               src='/companies/DevOi.png'
               alt='DevOi'
               width={120}
               height={60}
-              className='h-[100px] w-24 object-contain md:w-32'
+              className='h-11 w-24 object-contain'
             />
             <Image
               src='/companies/DevWeb.png'
               alt='DevWeb'
               width={160}
               height={60}
-              className='h-[100px] w-24 object-contain md:w-40'
+              className='h-11 w-24 object-contain'
             />
             <Image
               src='/companies/Viblo.png'
               alt='Viblo'
               width={120}
               height={60}
-              className='h-[100px] w-24 object-contain md:w-32'
+              className='h-11 w-24 object-contain'
             />
           </div>
         </div>
       </div>
 
-      {/* Main Content */}
-      <div className='grid gap-6 lg:grid-cols-12 lg:gap-12'>
-        {/* Left Column - Text Content - 5/12 */}
-        <div className='flex flex-col justify-center lg:col-span-7'>
-          <h2 className='mb-6 font-montserrat text-3xl font-extrabold uppercase text-primary md:text-4xl lg:text-5xl'>
+      <div className='grid items-stretch gap-5 lg:grid-cols-2'>
+        <div className='flex min-h-[360px] flex-col justify-center rounded-3xl border border-white/10 bg-white/[.045] p-7 shadow-2xl backdrop-blur-sm md:p-10'>
+          <h2 className='mb-5 max-w-xl font-montserrat text-3xl font-extrabold uppercase leading-tight text-primary md:text-[2.15rem]'>
             {t('about.sectionTitle')}
           </h2>
 
-          <div className='space-y-4 font-inter text-sm leading-relaxed text-gray-300 md:text-base'>
-            {Array.from({ length: 2 }).map((_, index) => (
-              <p key={index}>
-                {t.rich(`about.description.${index}`, {
-                  extrabold: (chunks) => (
-                    <span className='font-bold italic'>{chunks}</span>
-                  ),
-                  contestName: t('names.contestName'),
-                  netcompanyName: t('names.netcompanyName'),
-                  codeMelyName: t('names.codeMelyName'),
-                })}
-              </p>
+          <p className='max-w-xl text-base leading-7 text-white/75 md:text-lg md:leading-8'>
+            {t('about.summary')}
+          </p>
+          <div className='mt-7 flex flex-wrap gap-2.5'>
+            {Array.from({ length: 3 }).map((_, index) => (
+              <span
+                className='border-secondary/20 bg-secondary/10 rounded-full border px-4 py-2 text-xs font-semibold text-secondary md:text-sm'
+                key={index}
+              >
+                {t(`about.highlights.${index}`)}
+              </span>
             ))}
           </div>
         </div>
 
-        {/* Right Column - Images - 7/12 */}
-        <div className='grid grid-cols-1 gap-6 lg:col-span-5'>
-          {/* First Image Card */}
-          <div className='flex flex-col'>
-            <div className='relative mb-4'>
-              <div className='absolute -left-2 -top-2 h-[1px] w-20 bg-[#80FFF7]'></div>
-              <div className='absolute -left-2 -top-2 h-20 w-[1px] bg-[#80FFF7]'></div>
-              <div className='absolute -bottom-2 -right-2 h-[1px] w-20 bg-[#80FFF7]'></div>
-              <div className='absolute -bottom-2 -right-2 h-20 w-[1px] bg-[#80FFF7]'></div>
-              <div className='absolute -bottom-2 -right-2 h-20 w-[1px] bg-[#80FFF7]'></div>
-
-              <div className='absolute -right-2 -top-2 h-[1px] w-20 bg-[#80FFF7]'></div>
-              <div className='absolute -right-2 -top-2 h-20 w-[1px] bg-[#80FFF7]'></div>
-
-              <div className='absolute -bottom-2 -left-2 h-20 w-[1px] bg-[#80FFF7]'></div>
-              <div className='absolute -bottom-2 -left-2 h-[1px] w-20 bg-[#80FFF7]'></div>
-              <Image
-                src='/images/slider/12.jpg'
-                alt='IT Consultant Challenge Journey'
-                width={500}
-                height={300}
-                className='h-[320px] w-full object-cover'
-              />
-            </div>
-          </div>
+        <div className='border-secondary/25 group relative min-h-[360px] overflow-hidden rounded-3xl border'>
+          <Image
+            src='/images/slider/12.jpg'
+            alt='IT Consultant Challenge Journey'
+            fill
+            className='object-cover transition duration-700 group-hover:scale-105'
+          />
+          <div className='absolute inset-0 bg-gradient-to-t from-[#061e1c]/80 via-transparent to-transparent' />
         </div>
       </div>
 
@@ -146,16 +117,24 @@ const About = () => {
           },
         }}
         viewport={{ once: true }}
-        // className='lg:px-20'
+        className='mt-5 rounded-3xl border border-white/10 bg-white/[.035] p-6 md:p-8'
       >
-        <p className='mb-2 mt-4 font-bold md:pt-8'>
+        <p className='mb-5 font-bold text-white'>
           {t.rich('about.whoCanJoinQuestion', {
             bold: (chunks) => <span className='font-bold'>{chunks}</span>,
           })}
         </p>
-        <ul className='ml-10 list-disc'>
-          {Array.from({ length: 4 }).map((_, index) => (
-            <li key={index}>{t(`about.whoCanJoinAnswers.${index}`)}</li>
+        <ul className='grid auto-rows-fr gap-3 sm:grid-cols-2'>
+          {Array.from({ length: 5 }).map((_, index) => (
+            <li
+              className='flex h-full items-start gap-3 rounded-2xl border border-white/[.04] bg-black/10 p-4 text-sm leading-6 text-white/75'
+              key={index}
+            >
+              <span className='bg-secondary/15 mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-secondary'>
+                <Check className='h-3.5 w-3.5' strokeWidth={3} />
+              </span>
+              {t(`about.whoCanJoinAnswers.${index}`)}
+            </li>
           ))}
         </ul>
       </motion.div>

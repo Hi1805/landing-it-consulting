@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "IT Consultant Challenge | Innovate, Modernize and Digitize effectively",
-    "description": "The IT Consultant Challenge is an engaging team-based competition where participants step into the role of IT consultants. In groups of four, you are tasked with solving real-life IT problems by developing innovative, digitalized solutions for a client. This challenge simulates the dynamic environment of IT consulting, requiring teams to collaborate, think critically, and deliver impactful solutions that meet client needs."
+    "title": "IT Consultant Challenge 2026 | Prompt to Production",
+    "description": "A team-based competition where participants solve real business challenges through responsible digital solutions."
   },
   "root": {
     "names": {
@@ -19,15 +19,17 @@
       "organizers": "Organizers"
     },
     "hero": {
-      "subTitle": "THE TECHNOLOGICAL INNOVATION IDEA CHALLENGE",
-      "time": "Full day on Saturday, October 25, 2025, at Netcompany office.",
+      "subTitle": "PROMPT TO PRODUCTION · 2026",
+      "time": "From business problem to a working digital product",
       "buttonTitle": "Register now"
     },
     "about": {
       "title": "What is the IT Consultant Challenge?",
-      "sectionTitle": "The IT Consultant Challenge",
+      "sectionTitle": "Prompt to Production",
       "organizers": "Organizers",
       "eventPartner": "Event Partner",
+      "summary": "Step into the role of an IT Consultant—from understanding a business problem to building, adapting, and pitching a working product.",
+      "highlights": ["Teams of three", "Real project case", "Responsible AI"],
       "description": [
         "The <extrabold>{contestName}</extrabold> is an engaging team-based competition where participants step into the role of IT consultants. In groups of four, you are tasked with solving real-life IT problems by developing innovative, digitalized solutions for a client. This challenge simulates the dynamic environment of IT consulting, requiring teams to collaborate, think critically, and deliver impactful solutions that meet client needs.",
         "The event is jointly organized by {netcompanyName} Vietnam and {codeMelyName} - a Tech community for young enthusiasts."
@@ -36,10 +38,11 @@
       "workshop": "[WORKSHOP] IT CONSULTANT CAREER TALK – WHEN SOFTWARE ENGINEERS STEP INTO THE WORLD OF TECHNOLOGY CONSULTING",
       "whoCanJoinQuestion": "<bold>Join the challenge if you:</bold>",
       "whoCanJoinAnswers": [
-        "Are students from 2nd to 4th year studying IT, Computer Science, Software Engineer from universities in Ho Chi Minh City.",
-        "Have English skills as an advantage.",
-        "Have interest in exploring the roles of an IT consultant.",
-        "Want to meet new friends, IT fellows and IT professionals."
+        "Are curious about the role of an IT Consultant.",
+        "Enjoy solving real business problems with technology.",
+        "Are passionate about software development and digital innovation.",
+        "Want hands-on experience building AI-assisted solutions responsibly.",
+        "Have English skills."
       ]
     },
     "rules": {
@@ -54,6 +57,16 @@
     },
     "timeline": {
       "title": "Timeline",
+      "pending": "From launch to final delivery — follow every milestone of the 2026 competition.",
+      "events": [
+        { "date": "1 Oct", "label": "Event launch" },
+        { "date": "19 Oct", "label": "Round 1: Discover" },
+        { "date": "26 Oct", "label": "Deadline for Round 1" },
+        { "date": "2 Nov", "label": "Round 2: Build" },
+        { "date": "19 Nov", "label": "Deadline for Round 2" },
+        { "date": "16 Nov", "label": "Change request" },
+        { "date": "21 Nov", "label": "Round 3: Deliver" }
+      ],
       "note": "(*) The event will take place for the full day on October 25, 2025.",
       "journey": {
         "title": "Competition Journey",
@@ -75,8 +88,12 @@
     },
     "prizes": {
       "title": "Prizes",
-      "note": "(*) In cash prizes will be awarded in the form of Got It vouchers.",
-      "more": "In addition, members of the top 3 winning teams will receive a 20% voucher from EngineerPro worth up to 10 million VND."
+      "totalLabel": "Total prize value",
+      "totalAmount": "VND 105 million",
+      "placements": ["Champion", "First Runner-up", "Second Runner-up"],
+      "amounts": ["VND 60 million", "VND 30 million", "VND 15 million"],
+      "note": "Prizes are divided equally among team members and awarded as Got It e-vouchers.",
+      "more": ""
     },
     "timeCounter": {
       "title": "Registration deadline",
@@ -151,7 +168,7 @@
         "email": {
           "label": "Email"
         },
-        "note": "(*) The organizer will add other individuals to your team in case you do not have enough team members. Team size is 4 members in total"
+        "note": "(*) Each team consists of 3 members."
       },
       "submit": "Submit",
       "success": {
@@ -217,6 +234,7 @@
       "title": "Recap 2024",
       "subtitle": "Watch the highlights from IT Consultant Challenge 2024"
     },
+    "faqLink": "Frequently Asked Questions",
     "footer": {
       "contact": "Contact",
       "followUs": "Follow us via"

@@ -3,11 +3,11 @@ import Link from 'next/link';
 import { Facebook, Globe } from 'lucide-react';
 import MailContact from '@/assets/MailContact';
 
-const Footer = () => {
+const Footer = ({ locale = 'vi' }: { locale?: string }) => {
   const t = useTranslations('root');
 
   return (
-    <div className='mt-16 bg-[#023C38] py-10'>
+    <div className='mt-24 border-t border-white/10 bg-[#041715]/80 py-12 backdrop-blur-xl'>
       <div className='container grid grid-cols-2 gap-x-4 gap-y-6 px-4 md:grid-cols-4'>
         <div className='text-lg font-extrabold max-md:col-span-2'>
           <p>IT CONSULTANT</p>
@@ -71,6 +71,12 @@ const Footer = () => {
             {t('footer.followUs')}
           </p>
           <div className='mt-2 flex flex-col gap-2'>
+            <Link
+              href={`/${locale}/faq`}
+              className='flex items-center gap-2 transition-all hover:text-primary'
+            >
+              {t('faqLink')}
+            </Link>
             <Link
               href='https://www.codemely.dev/'
               className='flex items-center gap-2 transition-all hover:text-primary'

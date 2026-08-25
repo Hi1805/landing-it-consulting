@@ -15,8 +15,14 @@ const config = {
   prefix: '',
   theme: {
     fontFamily: {
-      inter: ['var(--font-inter)', 'Inter', 'sans-serif'],
-      montserrat: ['var(--font-montserrat)', 'Montserrat', 'serif'],
+      inter: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      montserrat: [
+        'Montserrat',
+        'Inter',
+        'ui-sans-serif',
+        'system-ui',
+        'sans-serif',
+      ],
     },
     container: {
       center: true,

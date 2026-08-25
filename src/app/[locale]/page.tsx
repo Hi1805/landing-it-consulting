@@ -10,7 +10,6 @@ import Prizes from '@/components/Prizes';
 import Registration from '@/components/Registration';
 import Rules from '@/components/Rules';
 import ScrollToTop from '@/components/ScrollToTop';
-import TimeCounter from '@/components/TimeCounter';
 import Timeline from '@/components/Timeline';
 import { MotionGlobalConfig } from 'framer-motion';
 import { isMobile } from 'react-device-detect';
@@ -47,10 +46,9 @@ export default function Home({
         <Rules locale={locale} />
         <Timeline locale={locale} />
         <Prizes locale={locale} />
-        <TimeCounter locale={locale} />
         <Registration />
         {/* <Organizer /> */}
-        <Footer />
+        <Footer locale={locale} />
       </div>
     </div>
   );

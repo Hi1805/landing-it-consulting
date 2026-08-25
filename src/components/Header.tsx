@@ -63,6 +63,10 @@ const Header = ({ locale }: LocaleProps) => {
     locale === 'vi' ? router.push('/en') : router.push('/vi');
   };
 
+  useEffect(() => {
+    setIsChangingLang(false);
+  }, [locale]);
+
   const handleScrollToSection = (path: string) => {
     const section = document.getElementById(path);
     if (section) {
