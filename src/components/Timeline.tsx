@@ -45,6 +45,26 @@ export default function Timeline({ locale }: TimelineProps) {
             {t('timeline.note')}
           </p>
         </div>
+        <div className='mt-12 border-t border-primary/20 pt-8 md:mt-16 md:pt-10'>
+          <h3 className='mb-6 text-center text-2xl font-extrabold uppercase text-primary md:text-4xl'>
+            {t('timeline.journey.title')}
+          </h3>
+          <div className='grid gap-5 lg:grid-cols-3'>
+            {[0, 1, 2].map((round) => (
+              <article
+                className='rounded-lg border border-primary/20 bg-black/10 p-5 shadow-lg backdrop-blur-sm md:p-6'
+                key={round}
+              >
+                <h4 className='mb-3 text-lg font-bold text-primary md:text-xl'>
+                  {t(`timeline.journey.rounds.${round}.title`)}
+                </h4>
+                <p className='text-sm leading-7 text-white/90 md:text-base'>
+                  {t(`timeline.journey.rounds.${round}.description`)}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

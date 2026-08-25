@@ -54,7 +54,24 @@
     },
     "timeline": {
       "title": "Mốc thời gian",
-      "note": "(*) Sự kiện diễn ra nguyên ngày 25/10/2025."
+      "note": "(*) Sự kiện diễn ra nguyên ngày 25/10/2025.",
+      "journey": {
+        "title": "Hành trình cuộc thi",
+        "rounds": [
+          {
+            "title": "Vòng 1 – Khám phá",
+            "description": "Mỗi đội nộp một đề xuất trình bày phần phân tích bài toán kinh doanh và giải pháp kỹ thuật dự kiến để giải quyết vấn đề đã lựa chọn."
+          },
+          {
+            "title": "Vòng 2 – Xây dựng",
+            "description": "Các đội được chọn sẽ bước vào Tuần lễ Hackathon, nơi các bạn biến đề xuất thành một MVP hoạt động đáp ứng các yêu cầu của tình huống. Người tham gia có thể sử dụng các công cụ AI trong suốt quá trình phát triển, đồng thời thể hiện tư duy phản biện, năng lực làm chủ kỹ thuật và trách nhiệm khi sử dụng AI."
+          },
+          {
+            "title": "Vòng 3 – Bàn giao",
+            "description": "Các đội vào chung kết sẽ nhận thêm một yêu cầu thay đổi để mô phỏng nhu cầu khách hàng luôn phát triển. Sau khi hoàn thiện giải pháp, các đội sẽ bàn giao sản phẩm cuối cùng và thuyết trình trước ban giám khảo. Phần thuyết trình chung kết sẽ được tổ chức trực tiếp tại văn phòng Netcompany ở Thành phố Hồ Chí Minh dành cho các đội tại Thành phố Hồ Chí Minh và trực tuyến dành cho các đội ở địa điểm khác."
+          }
+        ]
+      }
     },
     "prizes": {
       "title": "Giải thưởng lên đến 100 triệu VNĐ",

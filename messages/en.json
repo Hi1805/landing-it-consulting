@@ -54,7 +54,24 @@
     },
     "timeline": {
       "title": "Timeline",
-      "note": "(*) The event will take place for the full day on October 25, 2025."
+      "note": "(*) The event will take place for the full day on October 25, 2025.",
+      "journey": {
+        "title": "Competition Journey",
+        "rounds": [
+          {
+            "title": "Round 1 – Discover",
+            "description": "Each team submits a proposal outlining its analysis of the business challenge and the proposed technical solution to solve the selected problem."
+          },
+          {
+            "title": "Round 2 – Build",
+            "description": "Selected teams advance to a Hackathon Week, where they transform their proposal into a functional MVP that addresses the case study requirements. Participants can leverage AI tools throughout the development process while demonstrating critical thinking, technical ownership, and responsible use of AI."
+          },
+          {
+            "title": "Round 3 – Deliver",
+            "description": "Finalist teams receive an additional change request to simulate evolving client requirements. After refining their solution, teams deliver their final product and pitch to a panel of judges. The final presentation will be held onsite at Netcompany's Ho Chi Minh City office for teams in Ho Chi Minh City and online for teams from other locations."
+          }
+        ]
+      }
     },
     "prizes": {
       "title": "Prizes",
