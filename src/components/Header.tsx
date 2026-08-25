@@ -181,6 +181,13 @@ const Header = ({ locale }: LocaleProps) => {
                 ></motion.div>
               </div>
             ))}
+            <motion.button
+              className='hover:text-primary'
+              onClick={() => router.push(`/${locale}/faq`)}
+              type='button'
+            >
+              {t('header.faq')}
+            </motion.button>
           </div>
 
           <div className='flex lg:hidden'>
@@ -201,6 +208,11 @@ const Header = ({ locale }: LocaleProps) => {
                     {item.title}
                   </DropdownMenuItem>
                 ))}
+                <DropdownMenuItem
+                  onSelect={() => router.push(`/${locale}/faq`)}
+                >
+                  {t('header.faq')}
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>

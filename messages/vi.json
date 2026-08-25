@@ -16,7 +16,8 @@
       "timeline": "Thời gian",
       "prizes": "Giải thưởng",
       "register": "Đăng ký",
-      "organizers": "Đơn vị tổ chức"
+      "organizers": "Đơn vị tổ chức",
+      "faq": "FAQ"
     },
     "hero": {
       "subTitle": "PROMPT TO PRODUCTION · 2026",
@@ -72,26 +73,41 @@
         "title": "Hành trình cuộc thi",
         "rounds": [
           {
-            "title": "Vòng 1 – Khám phá",
-            "description": "Mỗi đội nộp một đề xuất trình bày phần phân tích bài toán kinh doanh và giải pháp kỹ thuật dự kiến để giải quyết vấn đề đã lựa chọn."
+            "title": "Vòng 1 – Phân tích & Đề xuất",
+            "description": "Các đội phân tích case study do Ban Tổ chức cung cấp và nộp đề xuất giải pháp, bao gồm hướng tiếp cận nghiệp vụ và kỹ thuật."
           },
           {
-            "title": "Vòng 2 – Xây dựng",
-            "description": "Các đội được chọn sẽ bước vào Tuần lễ Hackathon, nơi các bạn biến đề xuất thành một MVP hoạt động đáp ứng các yêu cầu của tình huống. Người tham gia có thể sử dụng các công cụ AI trong suốt quá trình phát triển, đồng thời thể hiện tư duy phản biện, năng lực làm chủ kỹ thuật và trách nhiệm khi sử dụng AI."
+            "title": "Vòng 2 – Phát triển sản phẩm",
+            "description": "Các đội vượt qua Vòng 1 tham gia Tuần lễ Hackathon để phát triển đề xuất thành một sản phẩm mẫu (MVP) có thể hoạt động."
           },
           {
-            "title": "Vòng 3 – Bàn giao",
-            "description": "Các đội vào chung kết sẽ nhận thêm một yêu cầu thay đổi để mô phỏng nhu cầu khách hàng luôn phát triển. Sau khi hoàn thiện giải pháp, các đội sẽ bàn giao sản phẩm cuối cùng và thuyết trình trước ban giám khảo. Phần thuyết trình chung kết sẽ được tổ chức trực tiếp tại văn phòng Netcompany ở Thành phố Hồ Chí Minh dành cho các đội tại Thành phố Hồ Chí Minh và trực tuyến dành cho các đội ở địa điểm khác."
+            "title": "Vòng 3 – Hoàn thiện & Thuyết trình",
+            "description": "Các đội chung kết cập nhật sản phẩm theo yêu cầu thay đổi, sau đó bàn giao giải pháp và thuyết trình trước Ban Giám khảo."
           }
-        ]
+        ],
+        "viewRules": "Xem thể lệ"
       }
     },
     "prizes": {
       "title": "Giải thưởng",
+      "featuredTitle": "Hiện kim & học bổng",
+      "scholarshipTitle": "Giải học bổng",
+      "cashBenefit": "Hiện kim",
+      "scholarshipBenefit": "Học bổng",
+      "awards": [
+        "Giải Nhất",
+        "Giải Nhì",
+        "Top Vote",
+        "Giải Ba",
+        "Top 5 team",
+        "Top 10 team",
+        "Top 30 team"
+      ],
       "totalLabel": "Tổng giá trị giải thưởng",
-      "totalAmount": "105 triệu VNĐ",
+      "totalAmount": "300 triệu VNĐ",
       "placements": ["Quán quân", "Á quân 1", "Á quân 2"],
       "amounts": ["60 triệu VNĐ", "30 triệu VNĐ", "15 triệu VNĐ"],
+      "voteAmount": "1 triệu VNĐ",
       "note": "Giải thưởng hiện kim sẽ được trao dưới dạng e-voucher Got It.",
       "more": ""
     },

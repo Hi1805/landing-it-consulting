@@ -1,5 +1,4 @@
 import { SECTION_IDS } from '@/constants';
-import { ArrowRight, Compass, Hammer, Presentation } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 interface RulesProps {
@@ -8,7 +7,6 @@ interface RulesProps {
 
 const Rules = ({ locale }: RulesProps) => {
   const t = useTranslations('root');
-  const icons = [Compass, Hammer, Presentation];
   return (
     <section className='container px-4 pt-20 md:pt-28' id={SECTION_IDS.RULES}>
       <div className='mb-10 text-center'>
@@ -19,30 +17,35 @@ const Rules = ({ locale }: RulesProps) => {
           {t('timeline.journey.title')}
         </h2>
       </div>
-      <div className='grid gap-4 lg:grid-cols-3'>
+      <div className='border-y border-white/20 lg:grid lg:grid-cols-3'>
         {[0, 1, 2].map((index) => {
-          const Icon = icons[index];
           return (
             <article
-              className='relative rounded-3xl border border-white/10 bg-white/[.045] p-7 shadow-2xl md:p-8'
+              className='relative flex min-h-[290px] flex-col border-b border-white/15 px-2 py-8 last:border-b-0 md:px-8 lg:border-b-0 lg:border-l lg:first:border-l-0'
               key={index}
             >
-              <div className='mb-6 flex items-center justify-between'>
-                <div className='bg-secondary/10 flex h-12 w-12 items-center justify-center rounded-2xl text-secondary'>
-                  <Icon className='h-6 w-6' />
-                </div>
-                <span className='font-montserrat text-4xl font-extrabold text-white/10'>
+              <div className='mb-8 flex items-center gap-4'>
+                <span className='font-montserrat text-sm font-extrabold tracking-[.18em] text-secondary'>
                   0{index + 1}
                 </span>
+                <span className='h-px flex-1 bg-white/20' />
               </div>
-              <h3 className='mb-4 text-xl font-bold text-primary'>
+              <h3 className='mb-4 max-w-sm text-xl font-bold leading-snug text-primary'>
                 {t(`timeline.journey.rounds.${index}.title`)}
               </h3>
-              <p className='text-sm leading-7 text-white/70'>
+              <p className='max-w-sm text-sm leading-6 text-white/70'>
                 {t(`timeline.journey.rounds.${index}.description`)}
               </p>
-              {index < 2 && (
-                <ArrowRight className='text-secondary/50 absolute -right-5 top-1/2 z-10 hidden h-6 w-6 lg:block' />
+              {index === 0 && (
+                <button
+                  className='mt-auto inline-flex w-fit items-center border-b-2 border-primary pb-1 text-sm font-extrabold text-primary transition hover:border-secondary hover:text-secondary'
+                  type='button'
+                >
+                  {t('timeline.journey.viewRules')}
+                  <span className='ml-2' aria-hidden='true'>
+                    →
+                  </span>
+                </button>
               )}
             </article>
           );

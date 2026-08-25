@@ -16,7 +16,8 @@
       "timeline": "Timeline",
       "prizes": "Prizes",
       "register": "Registration",
-      "organizers": "Organizers"
+      "organizers": "Organizers",
+      "faq": "FAQ"
     },
     "hero": {
       "subTitle": "PROMPT TO PRODUCTION · 2026",
@@ -73,26 +74,41 @@
         "rounds": [
           {
             "title": "Round 1 – Discover",
-            "description": "Each team submits a proposal outlining its analysis of the business challenge and the proposed technical solution to solve the selected problem."
+            "description": "Analyse the business challenge and propose a suitable technical solution."
           },
           {
             "title": "Round 2 – Build",
-            "description": "Selected teams advance to a Hackathon Week, where they transform their proposal into a functional MVP that addresses the case study requirements. Participants can leverage AI tools throughout the development process while demonstrating critical thinking, technical ownership, and responsible use of AI."
+            "description": "Turn the proposal into a working MVP during Hackathon Week with AI support."
           },
           {
             "title": "Round 3 – Deliver",
-            "description": "Finalist teams receive an additional change request to simulate evolving client requirements. After refining their solution, teams deliver their final product and pitch to a panel of judges. The final presentation will be held onsite at Netcompany's Ho Chi Minh City office for teams in Ho Chi Minh City and online for teams from other locations."
+            "description": "Refine the product for a change request and pitch the final solution to the judges."
           }
-        ]
+        ],
+        "viewRules": "View rules"
       }
     },
     "prizes": {
       "title": "Prizes",
+      "featuredTitle": "Cash & scholarship",
+      "scholarshipTitle": "Scholarship awards",
+      "cashBenefit": "Cash prize",
+      "scholarshipBenefit": "Scholarship",
+      "awards": [
+        "First Prize",
+        "Second Prize",
+        "Top Vote",
+        "Third Prize",
+        "Top 5 Teams",
+        "Top 10 Teams",
+        "Top 30 Teams"
+      ],
       "totalLabel": "Total prize value",
-      "totalAmount": "VND 105 million",
+      "totalAmount": "VND 300 million",
       "placements": ["Champion", "First Runner-up", "Second Runner-up"],
       "amounts": ["VND 60 million", "VND 30 million", "VND 15 million"],
-      "note": "Prizes are divided equally among team members and awarded as Got It e-vouchers.",
+      "voteAmount": "VND 1 million",
+      "note": "Cash prizes will be awarded as Got It e-vouchers.",
       "more": ""
     },
     "timeCounter": {
