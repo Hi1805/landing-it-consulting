@@ -1,6 +1,7 @@
 import * as Yup from 'yup';
 
 export interface PersonalForm {
+  participantType: 'student' | 'fresher';
   fullName: string;
   expectedGraduationYear: string;
   gender: 'male' | 'female';
@@ -13,6 +14,9 @@ export interface PersonalForm {
 export const personalFormSchema = Yup.object().shape<
   Record<keyof PersonalForm, Yup.StringSchema>
 >({
+  participantType: Yup.string()
+    .oneOf(['student', 'fresher'])
+    .required('participantType.required'),
   fullName: Yup.string()
     .required('fullName.required')
     .trim('fullName.required'),
@@ -32,6 +36,7 @@ export const personalFormSchema = Yup.object().shape<
 });
 
 export const personalFormInitValue: PersonalForm = {
+  participantType: 'student',
   fullName: '',
   expectedGraduationYear: '',
   email: '',

@@ -21,7 +21,7 @@
     },
     "hero": {
       "subTitle": "PROMPT TO PRODUCTION · 2026",
-      "time": "Từ bài toán kinh doanh đến sản phẩm số hoạt động được",
+      "time": "Cuộc thi dành cho sinh viên, fresher trong mảng công nghệ trên toàn quốc",
       "buttonTitle": "Đăng ký ngay"
     },
     "about": {
@@ -30,7 +30,25 @@
       "organizers": "Đơn vị tổ chức",
       "eventPartner": "Đối tác sự kiện",
       "summary": "Nhập vai IT Consultant: hiểu bài toán kinh doanh, xây dựng sản phẩm, thích ứng với thay đổi và thuyết trình giải pháp.",
-      "highlights": ["Đội 3 thành viên", "Dự án thực tế", "AI có trách nhiệm"],
+      "highlights": [
+        "Đội 3 thành viên",
+        "Dự án thực tế",
+        "Ứng dụng AI có trách nhiệm"
+      ],
+      "intro": [
+        "IT Consultant Challenge là cuộc thi theo đội, nơi bạn nhập vai chuyên gia tư vấn công nghệ và giải quyết một bài toán kinh doanh thực tế bằng giải pháp số.",
+        "Với chủ đề Prompt to Production, mỗi đội gồm ba thành viên sẽ đi trọn hành trình từ phân tích nhu cầu, đề xuất giải pháp đến phát triển sản phẩm và thuyết trình trước Ban Giám khảo."
+      ],
+      "cards": [
+        {
+          "title": "Trải nghiệm vai trò IT Consultant",
+          "description": "Làm việc theo đội, phân tích nhu cầu khách hàng và đưa ra những quyết định kỹ thuật có cơ sở."
+        },
+        {
+          "title": "Từ ý tưởng đến sản phẩm",
+          "description": "Ứng dụng AI có trách nhiệm để xây dựng MVP, thích ứng với thay đổi và bảo vệ giải pháp của đội."
+        }
+      ],
       "description": [
         "<extrabold>IT Consultant Challenge</extrabold>  là một cuộc thi theo nhóm nơi người tham gia sẽ nhập vai làm một IT Consultant thực thụ. Mỗi đội gồm bốn thành viên và một người hướng dẫn giàu kinh nghiệm, đồng hành cùng nhau giải quyết một vấn đề thực tiễn do Ban tổ chức đưa ra. Từ việc phân tích vấn đề, đề xuất giải pháp khả thi, cho đến việc trình bày ý tưởng một cách thuyết phục, cuộc thi đòi hỏi tinh thần đồng đội, khả năng tư duy phản biện sắc bén và kỹ năng giải quyết vấn đề sáng tạo.",
         "Sự kiện được phối hợp thực hiện bởi Công ty {netcompanyName} Việt Nam và Cộng đồng Tech dành cho các bạn trẻ {codeMelyName}."
@@ -58,15 +76,15 @@
     },
     "timeline": {
       "title": "Mốc thời gian",
-      "pending": "Từ ngày khởi động đến vòng bàn giao cuối cùng — theo dõi toàn bộ hành trình cuộc thi 2026.",
+      "pending": "Theo dõi toàn bộ hành trình cuộc thi năm 2026, từ ngày khởi động đến vòng Demo tại Netcompany.",
       "events": [
         { "date": "1/10", "label": "Khởi động sự kiện" },
-        { "date": "19/10", "label": "Vòng 1: Discover" },
+        { "date": "19/10", "label": "Vòng 1: Discover · Online" },
         { "date": "26/10", "label": "Hạn nộp Vòng 1" },
-        { "date": "2/11", "label": "Vòng 2: Build" },
+        { "date": "2/11", "label": "Vòng 2: Build · Online" },
         { "date": "19/11", "label": "Hạn nộp Vòng 2" },
         { "date": "16/11", "label": "Yêu cầu thay đổi" },
-        { "date": "21/11", "label": "Vòng 3: Deliver" }
+        { "date": "21/11", "label": "Vòng Demo · Tại Netcompany" }
       ],
       "note": "(*) Sự kiện diễn ra nguyên ngày 25/10/2025.",
       "journey": {
@@ -74,15 +92,15 @@
         "rounds": [
           {
             "title": "Vòng 1 – Phân tích & Đề xuất",
-            "description": "Các đội phân tích case study do Ban Tổ chức cung cấp và nộp đề xuất giải pháp, bao gồm hướng tiếp cận nghiệp vụ và kỹ thuật."
+            "description": "Thi online. Các đội phân tích case study do Ban Tổ chức cung cấp và nộp đề xuất giải pháp, bao gồm hướng tiếp cận nghiệp vụ và kỹ thuật."
           },
           {
             "title": "Vòng 2 – Phát triển sản phẩm",
-            "description": "Các đội vượt qua Vòng 1 tham gia Tuần lễ Hackathon để phát triển đề xuất thành một sản phẩm mẫu (MVP) có thể hoạt động."
+            "description": "Thi online. Các đội vượt qua Vòng 1 tham gia Tuần lễ Hackathon để phát triển đề xuất thành một sản phẩm mẫu (MVP) có thể hoạt động."
           },
           {
-            "title": "Vòng 3 – Hoàn thiện & Thuyết trình",
-            "description": "Các đội chung kết cập nhật sản phẩm theo yêu cầu thay đổi, sau đó bàn giao giải pháp và thuyết trình trước Ban Giám khảo."
+            "title": "Vòng Demo – Hoàn thiện & Thuyết trình",
+            "description": "Thi trực tiếp tại Netcompany. Các đội chung kết cập nhật sản phẩm theo yêu cầu thay đổi, sau đó demo và thuyết trình giải pháp trước Ban Giám khảo."
           }
         ],
         "viewRules": "Xem thể lệ"
@@ -95,10 +113,10 @@
       "cashBenefit": "Hiện kim",
       "scholarshipBenefit": "Học bổng",
       "awards": [
-        "Giải Nhất",
-        "Giải Nhì",
+        "Quán Quân",
+        "Á Quân 1",
         "Top Vote",
-        "Giải Ba",
+        "Á Quân 2",
         "Top 5 team",
         "Top 10 team",
         "Top 30 team"
@@ -130,6 +148,11 @@
       "title": "Đăng ký",
       "individual": {
         "title": "Cá nhân",
+        "participantType": {
+          "label": "Bạn hiện là",
+          "student": "Sinh viên",
+          "fresher": "Fresher"
+        },
         "fullName": {
           "label": "Tên đầy đủ",
           "placeholder": "Ví dụ: Nguyễn Văn A"
@@ -150,6 +173,20 @@
         "major": {
           "label": "Chuyên ngành",
           "placeholder": "Ví dụ: Kỹ thuật phần mềm"
+        },
+        "fresher": {
+          "graduationYear": {
+            "label": "Năm tốt nghiệp",
+            "placeholder": "Ví dụ: 2025"
+          },
+          "company": {
+            "label": "Công ty hiện tại hoặc gần nhất",
+            "placeholder": "Nhập tên công ty hoặc ghi Chưa có"
+          },
+          "position": {
+            "label": "Vị trí công việc hiện tại hoặc mong muốn",
+            "placeholder": "Ví dụ: Fresher Software Engineer"
+          }
         },
         "phoneNumber": {
           "label": "Số điện thoại",
@@ -201,6 +238,9 @@
         "toastMessage": "Đăng ký thất bại, vui lòng thử lại!."
       },
       "errorMessages": {
+        "participantType": {
+          "required": "Vui lòng chọn Sinh viên hoặc Fresher"
+        },
         "fullName": {
           "required": "Tên đầy đủ không được để trống"
         },
@@ -244,7 +284,7 @@
     },
     "highlights": {
       "title": "Khoảnh khắc cuộc thi IT Consultant Challenge",
-      "subtitle": "Những khoảnh khắc đáng nhớ của IT Consultant 2024"
+      "subtitle": "Những khoảnh khắc đáng nhớ của IT Consultant Challenge qua các mùa"
     },
     "videoRecap": {
       "title": "Recap 2024",

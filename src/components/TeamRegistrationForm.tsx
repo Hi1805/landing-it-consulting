@@ -74,7 +74,7 @@ export default function TeamRegistrationForm({
             `entry.629332802=${encodeURIComponent(membersFormData.length)}&` +
             `entry.1358224807=${encodeURIComponent(data.fullName)}&` +
             `entry.1076600136=${encodeURIComponent(data.expectedGraduationYear)}&` +
-            `entry.255642493=${encodeURIComponent(data.school)}&` +
+            `entry.255642493=${encodeURIComponent(`${data.participantType} | ${data.school}`)}&` +
             `entry.421524129=${encodeURIComponent(data.major)}&` +
             `entry.1071420772=${encodeURIComponent(data.phoneNumber)}&` +
             `entry.1527414272=${encodeURIComponent(data.email)}&`;

@@ -21,7 +21,7 @@
     },
     "hero": {
       "subTitle": "PROMPT TO PRODUCTION · 2026",
-      "time": "From business problem to a working digital product",
+      "time": "A nationwide competition for students and freshers in technology",
       "buttonTitle": "Register now"
     },
     "about": {
@@ -31,6 +31,20 @@
       "eventPartner": "Event Partner",
       "summary": "Step into the role of an IT Consultant—from understanding a business problem to building, adapting, and pitching a working product.",
       "highlights": ["Teams of three", "Real project case", "Responsible AI"],
+      "intro": [
+        "The IT Consultant Challenge is a team competition where you step into the role of a technology consultant and solve a real business challenge with a digital solution.",
+        "Under the theme Prompt to Production, teams of three move from understanding the problem and proposing a solution to building a product and pitching it to the judges."
+      ],
+      "cards": [
+        {
+          "title": "Experience IT consulting",
+          "description": "Work as a team, understand client needs and make well-grounded technical decisions."
+        },
+        {
+          "title": "From idea to product",
+          "description": "Use AI responsibly to build an MVP, respond to change and defend your solution."
+        }
+      ],
       "description": [
         "The <extrabold>{contestName}</extrabold> is an engaging team-based competition where participants step into the role of IT consultants. In groups of four, you are tasked with solving real-life IT problems by developing innovative, digitalized solutions for a client. This challenge simulates the dynamic environment of IT consulting, requiring teams to collaborate, think critically, and deliver impactful solutions that meet client needs.",
         "The event is jointly organized by {netcompanyName} Vietnam and {codeMelyName} - a Tech community for young enthusiasts."
@@ -58,15 +72,15 @@
     },
     "timeline": {
       "title": "Timeline",
-      "pending": "From launch to final delivery — follow every milestone of the 2026 competition.",
+      "pending": "Follow the complete journey of the 2026 competition, from the launch to the Demo Round at Netcompany.",
       "events": [
         { "date": "1 Oct", "label": "Event launch" },
-        { "date": "19 Oct", "label": "Round 1: Discover" },
+        { "date": "19 Oct", "label": "Round 1: Discover · Online" },
         { "date": "26 Oct", "label": "Deadline for Round 1" },
-        { "date": "2 Nov", "label": "Round 2: Build" },
+        { "date": "2 Nov", "label": "Round 2: Build · Online" },
         { "date": "19 Nov", "label": "Deadline for Round 2" },
         { "date": "16 Nov", "label": "Change request" },
-        { "date": "21 Nov", "label": "Round 3: Deliver" }
+        { "date": "21 Nov", "label": "Demo Round · At Netcompany" }
       ],
       "note": "(*) The event will take place for the full day on October 25, 2025.",
       "journey": {
@@ -74,15 +88,15 @@
         "rounds": [
           {
             "title": "Round 1 – Discover",
-            "description": "Analyse the business challenge and propose a suitable technical solution."
+            "description": "Held online. Analyse the business challenge and propose a suitable technical solution."
           },
           {
             "title": "Round 2 – Build",
-            "description": "Turn the proposal into a working MVP during Hackathon Week with AI support."
+            "description": "Held online. Turn the proposal into a working MVP during Hackathon Week with AI support."
           },
           {
-            "title": "Round 3 – Deliver",
-            "description": "Refine the product for a change request and pitch the final solution to the judges."
+            "title": "Demo Round – Deliver",
+            "description": "Held in person at Netcompany. Refine the product for a change request, then demo and pitch the final solution to the judges."
           }
         ],
         "viewRules": "View rules"
@@ -95,10 +109,10 @@
       "cashBenefit": "Cash prize",
       "scholarshipBenefit": "Scholarship",
       "awards": [
-        "First Prize",
-        "Second Prize",
+        "Champion",
+        "First Runner-up",
         "Top Vote",
-        "Third Prize",
+        "Second Runner-up",
         "Top 5 Teams",
         "Top 10 Teams",
         "Top 30 Teams"
@@ -130,6 +144,11 @@
       "title": "Registration",
       "individual": {
         "title": "Individual",
+        "participantType": {
+          "label": "You are currently a",
+          "student": "Student",
+          "fresher": "Fresher"
+        },
         "fullName": {
           "label": "Full name",
           "placeholder": "For example: Nguyen Van A"
@@ -150,6 +169,20 @@
         "major": {
           "label": "Major",
           "placeholder": "For example: Ky Thuat Phan Mem"
+        },
+        "fresher": {
+          "graduationYear": {
+            "label": "Graduation year",
+            "placeholder": "For example: 2025"
+          },
+          "company": {
+            "label": "Current or most recent company",
+            "placeholder": "Enter a company name or None"
+          },
+          "position": {
+            "label": "Current or desired role",
+            "placeholder": "For example: Fresher Software Engineer"
+          }
         },
         "phoneNumber": {
           "label": "Phone number",
@@ -201,6 +234,9 @@
         "toastMessage": "Registration failed, please try again!"
       },
       "errorMessages": {
+        "participantType": {
+          "required": "Please select Student or Fresher"
+        },
         "fullName": {
           "required": "Full name is required"
         },
@@ -244,7 +280,7 @@
     },
     "highlights": {
       "title": "Competition Moment of IT Consultant Challenge",
-      "subtitle": "Highlights of IT Consultant 2024"
+      "subtitle": "Memorable moments from previous seasons of the IT Consultant Challenge"
     },
     "videoRecap": {
       "title": "Recap 2024",

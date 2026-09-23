@@ -73,7 +73,7 @@ function PersonalRegistrationForm(
         `https://docs.google.com/forms/d/e/1FAIpQLSea32a8wFT9NJl8Tjpq_UbsuaEzd9W3JN482qH06Q_rG7wTZw/formResponse?` +
         `entry.2104713088=${encodeURIComponent(values.fullName)}&` +
         `entry.1390807190=${encodeURIComponent(values.expectedGraduationYear)}&` +
-        `entry.1701909681=${encodeURIComponent(values.school)}&` +
+        `entry.1701909681=${encodeURIComponent(`${values.participantType} | ${values.school}`)}&` +
         `entry.480658283=${encodeURIComponent(values.major)}&` +
         `entry.350657595=${encodeURIComponent(values.phoneNumber)}&` +
         `entry.489003859=${encodeURIComponent(values.email)}`;
@@ -116,6 +116,7 @@ function PersonalRegistrationForm(
       const validateErrors = await validateForm();
       setErrors(validateErrors);
       setTouched({
+        participantType: true,
         fullName: true,
         expectedGraduationYear: true,
         email: true,
@@ -136,12 +137,30 @@ function PersonalRegistrationForm(
         validationSchema={personalFormSchema}
         onSubmit={handleSubmit}
       >
+        {({ values: standaloneValues }) => (
         <Form
           className={cn('grid w-full grid-cols-2 gap-4', className, {
             hidden: !hidden,
           })}
           suppressHydrationWarning
         >
+          <div className='col-span-2'>
+            <SelectField
+              label={mainTranslations('individual.participantType.label')}
+              name='participantType'
+              required
+              options={[
+                {
+                  value: 'student',
+                  label: mainTranslations('individual.participantType.student'),
+                },
+                {
+                  value: 'fresher',
+                  label: mainTranslations('individual.participantType.fresher'),
+                },
+              ]}
+            />
+          </div>
           <div className='col-span-2'>
             <FormField
               label={mainTranslations('individual.fullName.label')}
@@ -153,11 +172,15 @@ function PersonalRegistrationForm(
           <div className='col-span-2 md:col-span-1'>
             <FormField
               label={mainTranslations(
-                'individual.expectedGraduationYear.label',
+                standaloneValues.participantType === 'student'
+                  ? 'individual.expectedGraduationYear.label'
+                  : 'individual.fresher.graduationYear.label',
               )}
               name='expectedGraduationYear'
               placeholder={mainTranslations(
-                'individual.expectedGraduationYear.placeholder',
+                standaloneValues.participantType === 'student'
+                  ? 'individual.expectedGraduationYear.placeholder'
+                  : 'individual.fresher.graduationYear.placeholder',
               )}
               required
             />
@@ -181,17 +204,33 @@ function PersonalRegistrationForm(
           </div>
           <div className='col-span-2 md:col-span-1'>
             <FormField
-              label={mainTranslations('individual.school.label')}
+              label={mainTranslations(
+                standaloneValues.participantType === 'student'
+                  ? 'individual.school.label'
+                  : 'individual.fresher.company.label',
+              )}
               name='school'
               required
-              placeholder={mainTranslations('individual.school.placeholder')}
+              placeholder={mainTranslations(
+                standaloneValues.participantType === 'student'
+                  ? 'individual.school.placeholder'
+                  : 'individual.fresher.company.placeholder',
+              )}
             />
           </div>
           <div className='col-span-2 md:col-span-1'>
             <FormField
-              label={mainTranslations('individual.major.label')}
+              label={mainTranslations(
+                standaloneValues.participantType === 'student'
+                  ? 'individual.major.label'
+                  : 'individual.fresher.position.label',
+              )}
               name='major'
-              placeholder={mainTranslations('individual.major.placeholder')}
+              placeholder={mainTranslations(
+                standaloneValues.participantType === 'student'
+                  ? 'individual.major.placeholder'
+                  : 'individual.fresher.position.placeholder',
+              )}
               required
             />
           </div>
@@ -237,12 +276,48 @@ function PersonalRegistrationForm(
             </button>
           </div>
         </Form>
+        )}
       </Formik>
     );
   }
 
   return (
     <div className={cn('grid w-full grid-cols-2 gap-4', className)}>
+      <div className='col-span-2'>
+        <label
+          className='block w-full font-bold text-primary'
+          htmlFor={`participantType_${id}`}
+        >
+          {mainTranslations('individual.participantType.label')}{' '}
+          <span className='text-red-500'>*</span>
+        </label>
+        <select
+          name='participantType'
+          id={`participantType_${id}`}
+          className='mt-1 w-full rounded-lg px-4 py-2 text-black'
+          value={formValues?.participantType || values.participantType}
+          onChange={(e) => {
+            handleChange(e);
+            onChange?.((prev) =>
+              prev.map((item) =>
+                item.index === formIndex
+                  ? {
+                      ...item,
+                      participantType: e.target.value as 'student' | 'fresher',
+                    }
+                  : item,
+              ),
+            );
+          }}
+        >
+          <option value='student'>
+            {mainTranslations('individual.participantType.student')}
+          </option>
+          <option value='fresher'>
+            {mainTranslations('individual.participantType.fresher')}
+          </option>
+        </select>
+      </div>
       <div className='col-span-2'>
         <label
           className='block w-full font-bold text-primary'
@@ -280,14 +355,20 @@ function PersonalRegistrationForm(
           className='block w-full font-bold text-primary'
           htmlFor={`expectedGraduationYear_${id}`}
         >
-          {mainTranslations('individual.expectedGraduationYear.label')}{' '}
+          {mainTranslations(
+            values.participantType === 'student'
+              ? 'individual.expectedGraduationYear.label'
+              : 'individual.fresher.graduationYear.label',
+          )}{' '}
           <span className='text-red-500'>*</span>
         </label>
         <input
           name='expectedGraduationYear'
           id={`expectedGraduationYear_${id}`}
           placeholder={mainTranslations(
-            'individual.expectedGraduationYear.placeholder',
+            values.participantType === 'student'
+              ? 'individual.expectedGraduationYear.placeholder'
+              : 'individual.fresher.graduationYear.placeholder',
           )}
           value={
             formValues?.expectedGraduationYear || values.expectedGraduationYear
@@ -356,13 +437,21 @@ function PersonalRegistrationForm(
           className='block w-full font-bold text-primary'
           htmlFor={`school_${id}`}
         >
-          {mainTranslations('individual.school.label')}{' '}
+          {mainTranslations(
+            values.participantType === 'student'
+              ? 'individual.school.label'
+              : 'individual.fresher.company.label',
+          )}{' '}
           <span className='text-red-500'>*</span>
         </label>
         <input
           name='school'
           id={`school_${id}`}
-          placeholder={mainTranslations('individual.school.placeholder')}
+          placeholder={mainTranslations(
+            values.participantType === 'student'
+              ? 'individual.school.placeholder'
+              : 'individual.fresher.company.placeholder',
+          )}
           value={formValues?.school || values.school}
           className='mt-1 w-full rounded-lg px-4 py-2 text-black'
           onChange={(e) => {
@@ -388,14 +477,22 @@ function PersonalRegistrationForm(
           className='block w-full font-bold text-primary'
           htmlFor={`major_${id}`}
         >
-          {mainTranslations('individual.major.label')}{' '}
+          {mainTranslations(
+            values.participantType === 'student'
+              ? 'individual.major.label'
+              : 'individual.fresher.position.label',
+          )}{' '}
           <span className='text-red-500'>*</span>
         </label>
         <input
           name='major'
           id={`major_${id}`}
           value={formValues?.major || values.major}
-          placeholder={mainTranslations('individual.major.placeholder')}
+          placeholder={mainTranslations(
+            values.participantType === 'student'
+              ? 'individual.major.placeholder'
+              : 'individual.fresher.position.placeholder',
+          )}
           className='mt-1 w-full rounded-lg px-4 py-2 text-black'
           onChange={(e) => {
             handleChange(e);

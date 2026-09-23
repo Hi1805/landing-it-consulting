@@ -71,36 +71,57 @@ const About = () => {
         </div>
       </div>
 
-      <div className='grid items-stretch gap-5 lg:grid-cols-2'>
-        <div className='flex min-h-[360px] flex-col justify-center rounded-3xl border border-white/10 bg-white/[.045] p-7 shadow-2xl backdrop-blur-sm md:p-10'>
-          <h2 className='mb-5 max-w-xl font-montserrat text-3xl font-extrabold uppercase leading-tight text-primary md:text-[2.15rem]'>
-            {t('about.sectionTitle')}
-          </h2>
+      <div className='relative grid gap-10 border-y border-white/15 py-10 lg:grid-cols-[64px_1.2fr_1fr_1fr] lg:gap-8 lg:py-14'>
+        <div className='hidden items-center justify-center lg:flex'>
+          <span className='whitespace-nowrap font-montserrat text-4xl font-black uppercase tracking-[.12em] text-white/[.09] [writing-mode:vertical-rl]'>
+            IT Consultant
+          </span>
+        </div>
 
-          <p className='max-w-xl text-base leading-7 text-white/75 md:text-lg md:leading-8'>
-            {t('about.summary')}
+        <div className='flex flex-col justify-center lg:pr-5'>
+          <p className='mb-4 text-xs font-bold uppercase tracking-[.2em] text-secondary'>
+            {t('about.sectionTitle')}
           </p>
-          <div className='mt-7 flex flex-wrap gap-2.5'>
+          <h2 className='mb-6 max-w-xl font-montserrat text-3xl font-extrabold uppercase leading-tight text-primary md:text-4xl'>
+            {t('about.title')}
+          </h2>
+          <p className='max-w-xl text-sm leading-7 text-white/80'>
+            {t('about.intro.0')}
+          </p>
+          <p className='mt-4 max-w-xl text-sm leading-7 text-white/65'>
+            {t('about.intro.1')}
+          </p>
+          <div className='mt-7 flex flex-wrap gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-[.1em] text-secondary'>
             {Array.from({ length: 3 }).map((_, index) => (
-              <span
-                className='border-secondary/20 bg-secondary/10 rounded-full border px-4 py-2 text-xs font-semibold text-secondary md:text-sm'
-                key={index}
-              >
-                {t(`about.highlights.${index}`)}
-              </span>
+              <span key={index}>{t(`about.highlights.${index}`)}</span>
             ))}
           </div>
         </div>
 
-        <div className='border-secondary/25 group relative min-h-[360px] overflow-hidden rounded-3xl border'>
-          <Image
-            src='/images/slider/12.jpg'
-            alt='IT Consultant Challenge Journey'
-            fill
-            className='object-cover transition duration-700 group-hover:scale-105'
-          />
-          <div className='absolute inset-0 bg-gradient-to-t from-[#061e1c]/80 via-transparent to-transparent' />
-        </div>
+        {[12, 20].map((imageNumber, index) => (
+          <article className='group self-start' key={imageNumber}>
+            <div className='relative mb-5 aspect-[4/3] p-3'>
+              <span className='absolute left-0 top-0 h-12 w-px bg-secondary' />
+              <span className='absolute left-0 top-0 h-px w-12 bg-secondary' />
+              <span className='absolute bottom-0 right-0 h-12 w-px bg-secondary' />
+              <span className='absolute bottom-0 right-0 h-px w-12 bg-secondary' />
+              <div className='relative h-full overflow-hidden'>
+                <Image
+                  src={`/images/slider/${imageNumber}.jpg`}
+                  alt={t(`about.cards.${index}.title`)}
+                  fill
+                  className='object-cover transition duration-700 group-hover:scale-105'
+                />
+              </div>
+            </div>
+            <h3 className='text-sm font-extrabold uppercase leading-5 text-white'>
+              {t(`about.cards.${index}.title`)}
+            </h3>
+            <p className='mt-2 text-sm leading-6 text-white/65'>
+              {t(`about.cards.${index}.description`)}
+            </p>
+          </article>
+        ))}
       </div>
 
       <motion.div

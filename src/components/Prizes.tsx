@@ -40,9 +40,6 @@ export default function Prizes({ locale }: PrizesProps) {
 
       <div className='mx-auto mt-10 grid max-w-6xl gap-4 lg:grid-cols-[1.15fr_.95fr_.8fr]'>
         <article className='relative flex min-h-[520px] flex-col justify-end overflow-hidden rounded-[24px] border border-white/15 bg-gradient-to-b from-[#214a45] to-[#172f2d] p-8 shadow-[0_24px_70px_rgba(0,0,0,.16)]'>
-          <span className='text-secondary/80 absolute left-8 top-7 text-xs font-black tracking-[.24em]'>
-            01
-          </span>
           <div className='bg-secondary/[.06] absolute left-1/2 top-14 flex h-56 w-56 -translate-x-1/2 items-center justify-center rounded-full shadow-[0_0_80px_rgba(124,220,207,.08)]'>
             <Trophy
               aria-hidden='true'
@@ -67,9 +64,6 @@ export default function Prizes({ locale }: PrizesProps) {
 
         <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-1'>
           <article className='relative flex min-h-[250px] flex-col justify-end overflow-hidden rounded-[20px] border border-white/15 bg-[#193633] p-7'>
-            <span className='absolute right-6 top-5 font-montserrat text-5xl font-black leading-none text-white/[.055]'>
-              02
-            </span>
             <div>
               <span className='mb-7 block h-1 w-12 rounded-full bg-secondary' />
               <p className='text-xs font-bold uppercase tracking-[.12em] text-white'>
@@ -86,9 +80,6 @@ export default function Prizes({ locale }: PrizesProps) {
           </article>
 
           <article className='relative flex min-h-[250px] flex-col justify-end overflow-hidden rounded-[20px] border border-white/15 bg-[#193633] p-7'>
-            <span className='absolute right-6 top-5 font-montserrat text-5xl font-black leading-none text-white/[.055]'>
-              03
-            </span>
             <div>
               <span className='mb-7 block h-1 w-12 rounded-full bg-secondary' />
               <p className='text-xs font-bold uppercase tracking-[.12em] text-white'>
