@@ -104,6 +104,7 @@
   .card-gradient-border::before {
     @apply rounded-3xl;
     content: '';
+    pointer-events: none;
     position: absolute;
     inset: 0;
     border: 1px solid transparent;

@@ -83,7 +83,7 @@ export default function Prizes({ locale }: PrizesProps) {
             <div>
               <span className='mb-7 block h-1 w-12 rounded-full bg-secondary' />
               <p className='text-xs font-bold uppercase tracking-[.12em] text-white'>
-                {t('prizes.awards.3')}
+                {t('prizes.awards.2')}
               </p>
               <p className='mt-2 text-xs font-semibold text-white/70'>
                 {t('prizes.cashBenefit')}
@@ -97,35 +97,20 @@ export default function Prizes({ locale }: PrizesProps) {
         </div>
 
         <div className='grid gap-3 sm:grid-cols-2 lg:grid-cols-1'>
-          {[2, 4, 5, 6].map((index) => {
-            const isVote = index === 2;
-            return (
-              <article
-                className={`flex flex-col justify-center rounded-xl border border-l-4 p-5 ${isVote ? 'border-primary/30 bg-primary/[.07] min-h-[155px] border-l-primary' : 'border-l-secondary/60 min-h-[110px] border-white/15 bg-[#193633]'}`}
-                key={index}
-              >
-                <div className='flex items-center gap-3'>
-                  <span
-                    className={`h-2 w-2 shrink-0 rotate-45 ${isVote ? 'bg-primary' : 'bg-secondary'}`}
-                  />
-                  <h3 className='text-sm font-extrabold uppercase text-white'>
-                    {t(`prizes.awards.${index}`)}
-                  </h3>
-                </div>
-                {isVote && (
-                  <>
-                    <p className='mt-2 text-xs font-semibold text-white/70'>
-                      {t('prizes.cashBenefit')}
-                    </p>
-                    <p className='mt-1 font-montserrat text-2xl font-extrabold text-primary'>
-                      {t('prizes.voteAmount')}
-                    </p>
-                  </>
-                )}
-                <ScholarshipLine />
-              </article>
-            );
-          })}
+          {[3, 4].map((index) => (
+            <article
+              className='border-l-secondary/60 flex min-h-[110px] flex-col justify-center rounded-xl border border-l-4 border-white/15 bg-[#193633] p-5'
+              key={index}
+            >
+              <div className='flex items-center gap-3'>
+                <span className='h-2 w-2 shrink-0 rotate-45 bg-secondary' />
+                <h3 className='text-sm font-extrabold uppercase text-white'>
+                  {t(`prizes.awards.${index}`)}
+                </h3>
+              </div>
+              <ScholarshipLine />
+            </article>
+          ))}
         </div>
       </div>
 

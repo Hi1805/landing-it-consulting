@@ -21,19 +21,21 @@
     },
     "hero": {
       "subTitle": "PROMPT TO PRODUCTION · 2026",
-      "time": "A nationwide competition for students and freshers in technology",
+      "time": "Tech Students & IT Freshers",
       "buttonTitle": "Register now"
     },
     "about": {
-      "title": "What is the IT Consultant Challenge?",
-      "sectionTitle": "Prompt to Production",
+      "title": "IT Consultant Challenge 2026",
+      "sectionTitle": "About",
+      "theme": "Prompt to Production",
       "organizers": "Organizers",
       "eventPartner": "Event Partner",
       "summary": "Step into the role of an IT Consultant—from understanding a business problem to building, adapting, and pitching a working product.",
       "highlights": ["Teams of three", "Real project case", "Responsible AI"],
       "intro": [
-        "The IT Consultant Challenge is a team competition where you step into the role of a technology consultant and solve a real business challenge with a digital solution.",
-        "Under the theme Prompt to Production, teams of three move from understanding the problem and proposing a solution to building a product and pitching it to the judges."
+        "The <bold>IT Consultant Challenge</bold> is a team-based competition where participants step into the role of <bold>IT Consultants</bold> to solve real business challenges through responsible digital solutions.",
+        "Following two successful seasons in <bold>2024</bold> and <bold>2025</bold>, the challenge returns with a brand-new format and the theme <bold>\"Prompt to Production.\"</bold> As AI continues to transform the way software is built, today's software developers need more than the ability to write code. They need to understand business needs, work effectively with AI, make informed technical decisions, and deliver solutions they can confidently stand behind.",
+        "In teams of <bold>three</bold>, participants will tackle a case study inspired by a real-life project. Throughout the competition, you'll experience the journey of an IT consultant - from understanding business problems and designing a solution to building a working product, adapting to changing requirements, and presenting your final delivery."
       ],
       "cards": [
         {
@@ -54,11 +56,11 @@
       "whoCanJoinQuestion": "<bold>Join the challenge if you:</bold>",
       "whoCanJoinAnswers": [
         "Are curious about the role of an IT Consultant.",
-        "Enjoy solving real business problems with technology.",
+        "Enjoy solving business problems with technology.",
         "Are passionate about software development and digital innovation.",
-        "Want hands-on experience building AI-assisted solutions responsibly.",
-        "Have English skills."
-      ]
+        "Want hands-on experience building AI-assisted solutions responsibly."
+      ],
+      "englishRequirement": "Have English skills."
     },
     "rules": {
       "title": "Rules",
@@ -72,34 +74,33 @@
     },
     "timeline": {
       "title": "Timeline",
-      "pending": "Follow the complete journey of the 2026 competition, from the launch to the Demo Round at Netcompany.",
+      "pending": "Follow the complete journey of the 2026 competition, from the launch to the final round",
       "events": [
-        { "date": "1 Oct", "label": "Event launch" },
-        { "date": "19 Oct", "label": "Round 1: Discover · Online" },
-        { "date": "26 Oct", "label": "Deadline for Round 1" },
-        { "date": "2 Nov", "label": "Round 2: Build · Online" },
-        { "date": "19 Nov", "label": "Deadline for Round 2" },
-        { "date": "16 Nov", "label": "Change request" },
-        { "date": "21 Nov", "label": "Demo Round · At Netcompany" }
+        {"date": "1 Oct", "label": "Competition launch"},
+        {"date": "19 Oct", "label": "Round 1: Discover"},
+        {"date": "26 Oct", "label": "Round 1 proposal deadline"},
+        {"date": "2 Nov", "label": "Round 2: Build"},
+        {"date": "9 Nov", "label": "Round 2 MVP deadline"},
+        {"date": "16 Nov", "label": "Receive change request"},
+        {"date": "21 Nov", "label": "Round 3: Deliver"}
       ],
-      "note": "(*) The event will take place for the full day on October 25, 2025.",
       "journey": {
         "title": "Competition Journey",
         "rounds": [
           {
             "title": "Round 1 – Discover",
-            "description": "Held online. Analyse the business challenge and propose a suitable technical solution."
+            "description": "Each team submits a proposal outlining its analysis of the business challenge and the proposed technical solution to solve the selected problem."
           },
           {
             "title": "Round 2 – Build",
-            "description": "Held online. Turn the proposal into a working MVP during Hackathon Week with AI support."
+            "description": "Selected teams advance to a <bold>Hackathon Week</bold>, where they transform their proposal into a functional MVP that addresses the case study requirements. Participants can leverage AI tools throughout the development process while demonstrating critical thinking, technical ownership, and responsible use of AI."
           },
           {
-            "title": "Demo Round – Deliver",
-            "description": "Held in person at Netcompany. Refine the product for a change request, then demo and pitch the final solution to the judges."
+            "title": "Round 3 – Deliver",
+            "description": "Finalist teams receive an additional change request to simulate evolving client requirements. After refining their solution, teams deliver their final product and pitch to a panel of judges. The final presentation will be held <bold>onsite at Netcompany's Ho Chi Minh City office</bold> for teams in Ho Chi Minh City and <bold>online</bold> for teams from other locations."
           }
         ],
-        "viewRules": "View rules"
+        "viewRules": "View detailed rules"
       }
     },
     "prizes": {
@@ -111,17 +112,14 @@
       "awards": [
         "Champion",
         "First Runner-up",
-        "Top Vote",
         "Second Runner-up",
         "Top 5 Teams",
-        "Top 10 Teams",
-        "Top 30 Teams"
+        "Top 10 Teams"
       ],
       "totalLabel": "Total prize value",
       "totalAmount": "VND 300 million",
       "placements": ["Champion", "First Runner-up", "Second Runner-up"],
       "amounts": ["VND 60 million", "VND 30 million", "VND 15 million"],
-      "voteAmount": "VND 1 million",
       "note": "Cash prizes will be awarded as Got It e-vouchers.",
       "more": ""
     },
@@ -154,7 +152,7 @@
           "placeholder": "For example: Nguyen Van A"
         },
         "expectedGraduationYear": {
-          "label": "Expected graduation year",
+          "label": "Graduation year",
           "placeholder": "2026"
         },
         "gender": {
@@ -217,7 +215,7 @@
         "email": {
           "label": "Email"
         },
-        "note": "(*) Each team consists of 3 members."
+        "note": "(*) Each team consists of up to 4 members."
       },
       "submit": "Submit",
       "success": {
@@ -241,8 +239,8 @@
           "required": "Full name is required"
         },
         "expectedGraduationYear": {
-          "required": "Expected graduation year is required",
-          "invalid": "Expected graduation year is invalid"
+          "required": "Graduation year is required",
+          "invalid": "Graduation year is invalid"
         },
         "gender": {
           "required": "Gender is required"

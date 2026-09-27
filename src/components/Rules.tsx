@@ -33,24 +33,16 @@ const Rules = ({ locale }: RulesProps) => {
               <h3 className='mb-4 max-w-sm text-xl font-bold leading-snug text-primary'>
                 {t(`timeline.journey.rounds.${index}.title`)}
               </h3>
-              <p className='max-w-sm text-sm leading-6 text-white/70'>
-                {t(`timeline.journey.rounds.${index}.description`)}
+              <p className='max-w-sm whitespace-pre-line text-sm leading-6 text-white/70'>
+                {t.rich(`timeline.journey.rounds.${index}.description`, {
+                  bold: (chunks) => <strong>{chunks}</strong>,
+                })}
               </p>
-              {index === 0 && (
-                <button
-                  className='mt-auto inline-flex w-fit items-center border-b-2 border-primary pb-1 text-sm font-extrabold text-primary transition hover:border-secondary hover:text-secondary'
-                  type='button'
-                >
-                  {t('timeline.journey.viewRules')}
-                  <span className='ml-2' aria-hidden='true'>
-                    →
-                  </span>
-                </button>
-              )}
             </article>
           );
         })}
       </div>
+
     </section>
   );
 };

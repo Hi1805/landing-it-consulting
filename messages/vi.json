@@ -21,12 +21,13 @@
     },
     "hero": {
       "subTitle": "PROMPT TO PRODUCTION · 2026",
-      "time": "Cuộc thi dành cho sinh viên, fresher trong mảng công nghệ trên toàn quốc",
+      "time": "Tech Students & IT Freshers",
       "buttonTitle": "Đăng ký ngay"
     },
     "about": {
-      "title": "IT Consultant Challenge là gì?",
-      "sectionTitle": "Prompt to Production",
+      "title": "IT Consultant Challenge 2026",
+      "sectionTitle": "Giới thiệu",
+      "theme": "Prompt to Production",
       "organizers": "Đơn vị tổ chức",
       "eventPartner": "Đối tác sự kiện",
       "summary": "Nhập vai IT Consultant: hiểu bài toán kinh doanh, xây dựng sản phẩm, thích ứng với thay đổi và thuyết trình giải pháp.",
@@ -36,8 +37,9 @@
         "Ứng dụng AI có trách nhiệm"
       ],
       "intro": [
-        "IT Consultant Challenge là cuộc thi theo đội, nơi bạn nhập vai chuyên gia tư vấn công nghệ và giải quyết một bài toán kinh doanh thực tế bằng giải pháp số.",
-        "Với chủ đề Prompt to Production, mỗi đội gồm ba thành viên sẽ đi trọn hành trình từ phân tích nhu cầu, đề xuất giải pháp đến phát triển sản phẩm và thuyết trình trước Ban Giám khảo."
+        "<bold>IT Consultant Challenge</bold> là cuộc thi theo đội, nơi bạn vào vai <bold>chuyên gia tư vấn công nghệ (IT Consultant)</bold> để phân tích những bài toán kinh doanh thực tế, từ đó đề xuất và xây dựng giải pháp công nghệ phù hợp.",
+        "Sau hai mùa thi thành công vào năm <bold>2024</bold> và <bold>2025</bold>, cuộc thi trở lại với hình thức hoàn toàn mới cùng chủ đề <bold>“Prompt to Production”</bold>. AI đang thay đổi cách phần mềm được tạo ra, nên Developer ngày nay cần nhiều hơn kỹ năng viết code. Bạn cần hiểu nhu cầu kinh doanh, biết cách làm việc hiệu quả với AI, đưa ra lựa chọn kỹ thuật có cơ sở và tự tin giải thích, chịu trách nhiệm về giải pháp mình xây dựng.",
+        "Mỗi đội gồm <bold>ba thành viên</bold> sẽ cùng giải quyết một tình huống lấy cảm hứng từ dự án thực tế. Qua cuộc thi, bạn sẽ trải nghiệm hành trình làm việc của một IT Consultant: tìm hiểu bài toán kinh doanh, thiết kế giải pháp, xây dựng sản phẩm có thể hoạt động, điều chỉnh khi yêu cầu thay đổi và trình bày sản phẩm cuối cùng."
       ],
       "cards": [
         {
@@ -57,12 +59,12 @@
       "workshop": "[WORKSHOP] CHUYỆN NGHỀ \"IT CONSULTANT\" – KHI KỸ SƯ PHẦN MỀM BƯỚC VÀO THẾ GIỚI TƯ VẤN CÔNG NGHỆ",
       "whoCanJoinQuestion": "<bold>Hãy tham gia ngay khi bạn:</bold>",
       "whoCanJoinAnswers": [
-        "Tò mò và muốn khám phá vai trò của một IT Consultant.",
-        "Yêu thích giải quyết bài toán kinh doanh thực tế bằng công nghệ.",
-        "Đam mê phát triển phần mềm và đổi mới số.",
-        "Muốn thực hành xây dựng giải pháp với AI một cách có trách nhiệm.",
-        "Có kỹ năng tiếng Anh."
-      ]
+        "Tò mò về vai trò của một IT Consultant.",
+        "Thích dùng công nghệ để giải quyết bài toán kinh doanh.",
+        "Đam mê phát triển phần mềm và đổi mới kỹ thuật số.",
+        "Muốn trực tiếp xây dựng các giải pháp ứng dụng AI có trách nhiệm."
+      ],
+      "englishRequirement": "Có kỹ năng tiếng Anh."
     },
     "rules": {
       "title": "Luật thi",
@@ -76,34 +78,33 @@
     },
     "timeline": {
       "title": "Mốc thời gian",
-      "pending": "Theo dõi toàn bộ hành trình cuộc thi năm 2026, từ ngày khởi động đến vòng Demo tại Netcompany.",
+      "pending": "Hành trình cuộc thi năm 2026: Khám phá (Discover), Xây dựng (Build) và Hoàn thiện (Deliver). Vòng chung kết tổ chức trực tiếp tại văn phòng Netcompany TP. Hồ Chí Minh cho các đội tại TP. Hồ Chí Minh và trực tuyến cho các đội ở khu vực khác.",
       "events": [
-        { "date": "1/10", "label": "Khởi động sự kiện" },
-        { "date": "19/10", "label": "Vòng 1: Discover · Online" },
-        { "date": "26/10", "label": "Hạn nộp Vòng 1" },
-        { "date": "2/11", "label": "Vòng 2: Build · Online" },
-        { "date": "19/11", "label": "Hạn nộp Vòng 2" },
-        { "date": "16/11", "label": "Yêu cầu thay đổi" },
-        { "date": "21/11", "label": "Vòng Demo · Tại Netcompany" }
+        {"date": "1/10", "label": "Khởi động cuộc thi"},
+        {"date": "19/10", "label": "Vòng 1: Khám phá (Discover)"},
+        {"date": "26/10", "label": "Hạn nộp proposal Vòng 1"},
+        {"date": "2/11", "label": "Vòng 2: Xây dựng (Build)"},
+        {"date": "9/11", "label": "Hạn nộp MVP Vòng 2"},
+        {"date": "16/11", "label": "Nhận yêu cầu thay đổi"},
+        {"date": "21/11", "label": "Vòng 3: Hoàn thiện (Deliver)"}
       ],
-      "note": "(*) Sự kiện diễn ra nguyên ngày 25/10/2025.",
       "journey": {
         "title": "Hành trình cuộc thi",
         "rounds": [
           {
-            "title": "Vòng 1 – Phân tích & Đề xuất",
-            "description": "Thi online. Các đội phân tích case study do Ban Tổ chức cung cấp và nộp đề xuất giải pháp, bao gồm hướng tiếp cận nghiệp vụ và kỹ thuật."
+            "title": "Vòng 1 - Khám phá (Discover)",
+            "description": "Mỗi đội sẽ gửi một bản đề xuất (proposal), trong đó trình bày cách tiếp cận để phân tích bài toán kinh doanh và đưa ra giải pháp công nghệ phù hợp nhằm giải quyết vấn đề được lựa chọn."
           },
           {
-            "title": "Vòng 2 – Phát triển sản phẩm",
-            "description": "Thi online. Các đội vượt qua Vòng 1 tham gia Tuần lễ Hackathon để phát triển đề xuất thành một sản phẩm mẫu (MVP) có thể hoạt động."
+            "title": "Vòng 2 - Xây dựng (Build)",
+            "description": "Các đội được lựa chọn sẽ bước vào <bold>Hackathon Week</bold>, nơi biến ý tưởng trong proposal thành một sản phẩm MVP có thể hoạt động và đáp ứng yêu cầu của bài toán.\n\nTrong quá trình phát triển, các đội có thể tận dụng các công cụ AI để hỗ trợ xây dựng sản phẩm, đồng thời thể hiện khả năng tư duy giải quyết vấn đề, làm chủ công nghệ và sử dụng AI một cách hiệu quả, có trách nhiệm."
           },
           {
-            "title": "Vòng Demo – Hoàn thiện & Thuyết trình",
-            "description": "Thi trực tiếp tại Netcompany. Các đội chung kết cập nhật sản phẩm theo yêu cầu thay đổi, sau đó demo và thuyết trình giải pháp trước Ban Giám khảo."
+            "title": "Vòng 3 - Hoàn thiện (Deliver)",
+            "description": "Các đội lọt vào vòng chung kết sẽ nhận thêm một yêu cầu thay đổi (change request) để mô phỏng những tình huống phát sinh khi làm việc với khách hàng thực tế.\n\nSau khi hoàn thiện giải pháp, các đội sẽ trình bày sản phẩm cuối cùng và thuyết trình trước hội đồng giám khảo.\n\nVòng chung kết sẽ được tổ chức <bold>trực tiếp tại văn phòng Netcompany TP. Hồ Chí Minh</bold> dành cho các đội tại TP. Hồ Chí Minh và <bold>trực tuyến</bold> dành cho các đội đến từ những khu vực khác."
           }
         ],
-        "viewRules": "Xem thể lệ"
+        "viewRules": "Xem chi tiết thể lệ"
       }
     },
     "prizes": {
@@ -115,17 +116,14 @@
       "awards": [
         "Quán Quân",
         "Á Quân 1",
-        "Top Vote",
         "Á Quân 2",
         "Top 5 team",
-        "Top 10 team",
-        "Top 30 team"
+        "Top 10 team"
       ],
       "totalLabel": "Tổng giá trị giải thưởng",
       "totalAmount": "300 triệu VNĐ",
       "placements": ["Quán quân", "Á quân 1", "Á quân 2"],
       "amounts": ["60 triệu VNĐ", "30 triệu VNĐ", "15 triệu VNĐ"],
-      "voteAmount": "1 triệu VNĐ",
       "note": "Giải thưởng hiện kim sẽ được trao dưới dạng e-voucher Got It.",
       "more": ""
     },
@@ -158,7 +156,7 @@
           "placeholder": "Ví dụ: Nguyễn Văn A"
         },
         "expectedGraduationYear": {
-          "label": "Năm dự định tốt nghiệp",
+          "label": "Năm tốt nghiệp",
           "placeholder": "Ví dụ: 2026"
         },
         "gender": {
@@ -196,7 +194,7 @@
           "label": "Email",
           "placeholder": "Ví dụ: example@example.com"
         },
-        "note": "(*) BTC sẽ ghép team cho bạn trong trường hợp bạn đăng kí cá nhân nhé."
+        "note": "(*) BTC sẽ ghép team cho bạn trong trường hợp bạn đăng kí cá nhân."
       },
       "team": {
         "title": "Đội",
@@ -221,7 +219,7 @@
         "email": {
           "label": "Email"
         },
-        "note": "(*) Mỗi đội thi gồm tổng cộng 3 thành viên."
+        "note": "(*) Mỗi đội thi gồm tối đa 4 thành viên."
       },
       "submit": "Đăng ký",
       "success": {
@@ -245,8 +243,8 @@
           "required": "Tên đầy đủ không được để trống"
         },
         "expectedGraduationYear": {
-          "required": "Năm dự định tốt nghiệp không được để trống",
-          "invalid": "Năm dự định tốt nghiệp không hợp lệ"
+          "required": "Năm tốt nghiệp không được để trống",
+          "invalid": "Năm tốt nghiệp không hợp lệ"
         },
         "gender": {
           "required": "Giới tính không được để trống"

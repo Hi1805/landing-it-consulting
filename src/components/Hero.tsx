@@ -81,7 +81,7 @@ const Hero = ({ locale }: LocaleProps) => {
 
           <div className='relative h-[600px] w-full overflow-hidden p-0 sm:hidden'>
             <Image
-              src='/cover.png'
+              src={locale === 'vi' ? '/cover_vn.png' : '/cover.png'}
               alt='landing-it-consulting'
               sizes='auto'
               className='object-cover'

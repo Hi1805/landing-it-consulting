@@ -3,20 +3,13 @@ import { REGISTRATION_CLOSE_DATE, SECTION_IDS } from '@/constants';
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import React, { useEffect, useState } from 'react';
-import PersonalRegistrationForm from '@/components/PersonalRegistrationForm';
-import { cn } from '@/lib/utils';
+import { useEffect, useState } from 'react';
 import TeamRegistrationForm from '@/components/TeamRegistrationForm';
 
 const Registration = () => {
   const t = useTranslations('root');
-  const [typeForm, setTypeForm] = React.useState<'team' | 'personal'>('team');
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [isFormClosed, setIsFormClosed] = useState(false);
-
-  const toggleTypeForm = (type: 'team' | 'personal') => {
-    setTypeForm(type);
-  };
 
   const renderContent = () => {
     if (submitSuccess) {
@@ -25,21 +18,11 @@ const Registration = () => {
     if (isFormClosed) {
       return <ClosedFormMessage />;
     }
-    const isPersonalForm = typeForm === 'personal';
-
     return (
-      <>
-        <PersonalRegistrationForm
-          hidden={isPersonalForm}
-          onSubmitSuccess={() => setSubmitSuccess(true)}
-          onRegistrationExpired={() => setIsFormClosed(true)}
-        />
-        <TeamRegistrationForm
-          hidden={!isPersonalForm}
-          onSubmitSuccess={() => setSubmitSuccess(true)}
-          onRegistrationExpired={() => setIsFormClosed(true)}
-        />
-      </>
+      <TeamRegistrationForm
+        onSubmitSuccess={() => setSubmitSuccess(true)}
+        onRegistrationExpired={() => setIsFormClosed(true)}
+      />
     );
   };
   useEffect(() => {
@@ -53,43 +36,6 @@ const Registration = () => {
       </h2>
 
       <div className='card-gradient-border mx-auto mt-3 flex w-full flex-col items-center justify-center gap-y-6 p-10 px-4 md:mt-10 md:w-3/4 md:px-10'>
-        {submitSuccess || isFormClosed || (
-          <>
-            <div className='grid w-full grid-cols-2 gap-y-6 text-center text-lg font-bold lg:text-3xl'>
-              <button
-                onClick={() => toggleTypeForm('team')}
-                className={cn('uppercase transition-all', {
-                  'text-primary': typeForm === 'team',
-                })}
-                type='button'
-              >
-                {t('registration.team.title')}
-              </button>
-              <button
-                onClick={() => toggleTypeForm('personal')}
-                className={cn('uppercase transition-all', {
-                  'text-primary': typeForm === 'personal',
-                })}
-                type='button'
-              >
-                {t('registration.individual.title')}
-              </button>
-            </div>
-            <div className='h-[4px] w-full bg-white'>
-              <motion.div
-                initial='team'
-                animate={typeForm}
-                className='h-full w-1/2 bg-primary'
-                transition={{ duration: 0.3, type: 'spring' }}
-                variants={{
-                  team: { translateX: 0 },
-                  personal: { translateX: '100%' },
-                }}
-              ></motion.div>
-            </div>
-          </>
-        )}
-
         {renderContent()}
       </div>
     </div>

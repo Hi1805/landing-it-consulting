@@ -21,9 +21,9 @@ const content: Record<
             answer: (
               <>
                 The competition has three knockout rounds:{' '}
-                <strong>Discover</strong> (online proposal),{' '}
-                <strong>Build</strong> (Hackathon Week and online MVP
-                submission), and <strong>Deliver</strong> (change request,
+                <strong>Idea Submission</strong> (online proposal),{' '}
+                <strong>MVP Build-a-thon</strong> (development and online MVP
+                submission), and <strong>Pitching</strong> (change request,
                 refinement, and final pitch).
               </>
             ),
@@ -170,9 +170,9 @@ const content: Record<
             question: 'Cuộc thi được tổ chức như thế nào?',
             answer: (
               <>
-                Cuộc thi gồm ba vòng loại trực tiếp: <strong>Discover</strong>{' '}
-                (nộp đề xuất online), <strong>Build</strong> (Hackathon Week và
-                nộp MVP online), và <strong>Deliver</strong> (xử lý yêu cầu thay
+                Cuộc thi gồm ba vòng loại trực tiếp: <strong>Idea Submission</strong>{' '}
+                (nộp đề xuất online), <strong>MVP Build-a-thon</strong> (phát triển và
+                nộp MVP online), và <strong>Pitching</strong> (xử lý yêu cầu thay
                 đổi, hoàn thiện và thuyết trình).
               </>
             ),

@@ -23,7 +23,6 @@ import { toast } from 'react-toastify';
 interface TeamRegistrationFormProps {
   onSubmitSuccess?: () => void;
   onRegistrationExpired?: () => void;
-  hidden?: boolean;
 }
 
 export interface MembersFormDataValue extends PersonalForm {
@@ -35,10 +34,11 @@ let indexCount = 2;
 export default function TeamRegistrationForm({
   onSubmitSuccess,
   onRegistrationExpired,
-  hidden,
 }: TeamRegistrationFormProps) {
   const t = useTranslations('root');
-  const memberFormsRef = useRef<PersonalRegistrationFormHandle[]>([]);
+  const memberFormsRef = useRef<Map<number, PersonalRegistrationFormHandle>>(
+    new Map(),
+  );
   const [selectedMemberIndex, setSelectedMemberIndex] = useState(0);
   const [membersFormData, setMembersFormData] = useState<
     MembersFormDataValue[]
@@ -57,11 +57,16 @@ export default function TeamRegistrationForm({
         return;
       }
 
-      const allMemberFormsAreValid = await (
-        await Promise.all(memberFormsRef.current.map((form) => form.validate()))
-      ).every(Boolean);
+      const memberValidity = await Promise.all(
+        membersFormData.map(async (member) => {
+          const form = memberFormsRef.current.get(member.index);
+          return form ? form.validate() : false;
+        }),
+      );
+      const invalidMemberIndex = memberValidity.findIndex((valid) => !valid);
 
-      if (!allMemberFormsAreValid) {
+      if (invalidMemberIndex !== -1) {
+        setSelectedMemberIndex(membersFormData[invalidMemberIndex].index);
         toast.error(t('registration.failed.inputError'));
         return;
       }
@@ -122,16 +127,13 @@ export default function TeamRegistrationForm({
     >
       {({ isValidating, isSubmitting }) => (
         <Form
-          className={cn('grid w-full grid-cols-2 gap-4', {
-            hidden: !hidden,
-          })}
+          className='grid w-full grid-cols-2 gap-4'
           suppressHydrationWarning
         >
           <div className='col-span-2'>
             <FormField
               label={t('registration.team.teamName.label')}
               name='teamName'
-              autoFocus={!hidden}
               placeholder={t('registration.team.teamName.placeholder')}
               required
             />
@@ -200,8 +202,11 @@ export default function TeamRegistrationForm({
                 <PersonalRegistrationForm
                   key={`member_form_${data.index}`}
                   ref={(formHandle) => {
-                    if (formHandle) memberFormsRef.current[index] = formHandle;
-                    else memberFormsRef.current.splice(0, 1);
+                    if (formHandle) {
+                      memberFormsRef.current.set(data.index, formHandle);
+                    } else {
+                      memberFormsRef.current.delete(data.index);
+                    }
                   }}
                   showNotes={false}
                   asChild
