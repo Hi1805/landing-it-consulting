@@ -4,6 +4,7 @@ export enum SECTION_IDS {
   CHALLENGE = 'challenge',
   RULES = 'rules',
   TIMELINE = 'timeline',
+  FAQ = 'faq',
   PRIZES = 'prizes',
   SCHEDULE = 'schedule',
   REGISTER = 'register',

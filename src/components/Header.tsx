@@ -34,6 +34,10 @@ const SECTION_ITEMS = [
     path: SECTION_IDS.TIMELINE,
   },
   {
+    title: 'FAQ',
+    path: SECTION_IDS.FAQ,
+  },
+  {
     title: 'Register',
     path: SECTION_IDS.REGISTER,
   },
@@ -150,8 +154,8 @@ const Header = ({ locale }: LocaleProps) => {
       >
         <Title isActiveScroll={isActiveScroll} />
 
-        <nav className='flex h-full items-center gap-x-8 font-semibold text-gray'>
-          <div className='hidden items-center gap-x-8 lg:flex'>
+        <nav className='flex h-full items-center gap-x-5 font-semibold text-gray xl:gap-x-8'>
+          <div className='hidden items-center gap-x-5 lg:flex xl:gap-x-8'>
             {SECTION_ITEMS.map((item, idx) => (
               <div
                 onClick={() => {
@@ -181,13 +185,6 @@ const Header = ({ locale }: LocaleProps) => {
                 ></motion.div>
               </div>
             ))}
-            <motion.button
-              className='hover:text-primary'
-              onClick={() => router.push(`/${locale}/faq`)}
-              type='button'
-            >
-              {t('header.faq')}
-            </motion.button>
           </div>
 
           <div className='flex lg:hidden'>
@@ -205,14 +202,9 @@ const Header = ({ locale }: LocaleProps) => {
                     key={item.title}
                     onSelect={() => handleScrollToSection(item.path)}
                   >
-                    {item.title}
+                    {t(`header.${item.path}` as any)}
                   </DropdownMenuItem>
                 ))}
-                <DropdownMenuItem
-                  onSelect={() => router.push(`/${locale}/faq`)}
-                >
-                  {t('header.faq')}
-                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>

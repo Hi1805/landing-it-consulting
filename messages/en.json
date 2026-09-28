@@ -76,32 +76,43 @@
       "title": "Timeline",
       "pending": "Follow the complete journey of the 2026 competition, from the launch to the final round",
       "events": [
-        {"date": "1 Oct", "label": "Competition launch"},
-        {"date": "19 Oct", "label": "Round 1: Discover"},
-        {"date": "26 Oct", "label": "Round 1 proposal deadline"},
-        {"date": "2 Nov", "label": "Round 2: Build"},
-        {"date": "9 Nov", "label": "Round 2 MVP deadline"},
-        {"date": "16 Nov", "label": "Receive change request"},
-        {"date": "21 Nov", "label": "Round 3: Deliver"}
+        { "date": "1 Oct", "label": "Competition launch" },
+        { "date": "19 Oct", "label": "Round 1: Discover" },
+        { "date": "26 Oct", "label": "Round 1 proposal deadline" },
+        { "date": "2 Nov", "label": "Top 20 announced" },
+        { "date": "9 Nov", "label": "Round 2 MVP deadline" },
+        { "date": "16 Nov", "label": "Top 10 announced" },
+        { "date": "21 Nov", "label": "Final & Demo" }
       ],
       "journey": {
         "title": "Competition Journey",
+        "roundLabel": "Round {number}",
         "rounds": [
           {
-            "title": "Round 1 – Discover",
-            "description": "Each team submits a proposal outlining its analysis of the business challenge and the proposed technical solution to solve the selected problem."
+            "title": "Discover",
+            "date": "26 Oct – 2 Nov",
+            "summary": "The Organiser reviews all proposals to identify the most creative, feasible and relevant ideas for the challenge.",
+            "selectionNote": "Teams advancing",
+            "selection": "Top 20 teams"
           },
           {
-            "title": "Round 2 – Build",
-            "description": "Selected teams advance to a <bold>Hackathon Week</bold>, where they transform their proposal into a functional MVP that addresses the case study requirements. Participants can leverage AI tools throughout the development process while demonstrating critical thinking, technical ownership, and responsible use of AI."
+            "title": "Build",
+            "date": "9 Nov – 16 Nov",
+            "summary": "Teams turn their ideas into an MVP. The Organiser evaluates the product, technical capability and problem-solving approach.",
+            "selectionNote": "Teams advancing",
+            "selection": "Top 10 teams"
           },
           {
-            "title": "Round 3 – Deliver",
-            "description": "Finalist teams receive an additional change request to simulate evolving client requirements. After refining their solution, teams deliver their final product and pitch to a panel of judges. The final presentation will be held <bold>onsite at Netcompany's Ho Chi Minh City office</bold> for teams in Ho Chi Minh City and <bold>online</bold> for teams from other locations."
+            "title": "Deliver",
+            "date": "21 Nov",
+            "summary": "The Top 10 refine their solutions, demo their products and pitch live to the judging panel in the final round.",
+            "selectionNote": "Final stage",
+            "selection": "Demo & Final"
           }
         ],
         "viewRules": "View detailed rules"
-      }
+      },
+      "milestones": "Key milestones"
     },
     "prizes": {
       "title": "Prizes",
@@ -283,6 +294,34 @@
     "videoRecap": {
       "title": "Recap 2024",
       "subtitle": "Watch the highlights from IT Consultant Challenge 2024"
+    },
+    "faq": {
+      "eyebrow": "Good to know",
+      "title": "Frequently Asked Questions",
+      "description": "Quick answers to common questions before you and your teammates begin the challenge.",
+      "viewAll": "View all questions",
+      "items": [
+        {
+          "question": "What are the competition rounds?",
+          "answer": "There are three knockout rounds: Discover, Build and Deliver. Discover selects the Top 20, then Build selects the Top 10 for the final Demo."
+        },
+        {
+          "question": "How many members are on a team?",
+          "answer": "Each team has 3 members who are students or young technology enthusiasts interested in software development and IT consulting."
+        },
+        {
+          "question": "Is the competition online or onsite?",
+          "answer": "Discover and Build take place online. The final is onsite at Netcompany Ho Chi Minh City for local teams and online for teams from other locations."
+        },
+        {
+          "question": "Can teams use AI tools?",
+          "answer": "Yes. AI should be used as a supporting tool. Teams must validate AI-generated content, assess product feasibility, and take responsibility for their entire submission; presentation slides should not be entirely AI-generated."
+        },
+        {
+          "question": "Are there technology-stack restrictions?",
+          "answer": "No. Teams can choose the language, framework and technologies that best suit their solution."
+        }
+      ]
     },
     "faqLink": "Frequently Asked Questions",
     "footer": {

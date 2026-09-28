@@ -15,6 +15,7 @@ import { MotionGlobalConfig } from 'framer-motion';
 import { isMobile } from 'react-device-detect';
 import { Bounce, ToastContainer, ToastContainerProps } from 'react-toastify';
 import Slider from '@/components/Slider';
+import FAQ from '@/components/FAQ';
 
 const toastContainerConfig: ToastContainerProps = {
   position: 'top-right',
@@ -47,6 +48,7 @@ export default function Home({
         <Timeline locale={locale} />
         <Prizes locale={locale} />
         <Registration />
+        <FAQ locale={locale} />
         {/* <Organizer /> */}
         <Footer locale={locale} />
       </div>

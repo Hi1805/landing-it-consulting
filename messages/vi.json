@@ -80,32 +80,43 @@
       "title": "Mốc thời gian",
       "pending": "Hành trình cuộc thi năm 2026: Khám phá (Discover), Xây dựng (Build) và Hoàn thiện (Deliver). Vòng chung kết tổ chức trực tiếp tại văn phòng Netcompany TP. Hồ Chí Minh cho các đội tại TP. Hồ Chí Minh và trực tuyến cho các đội ở khu vực khác.",
       "events": [
-        {"date": "1/10", "label": "Khởi động cuộc thi"},
-        {"date": "19/10", "label": "Vòng 1: Khám phá (Discover)"},
-        {"date": "26/10", "label": "Hạn nộp proposal Vòng 1"},
-        {"date": "2/11", "label": "Vòng 2: Xây dựng (Build)"},
-        {"date": "9/11", "label": "Hạn nộp MVP Vòng 2"},
-        {"date": "16/11", "label": "Nhận yêu cầu thay đổi"},
-        {"date": "21/11", "label": "Vòng 3: Hoàn thiện (Deliver)"}
+        { "date": "1/10", "label": "Khởi động cuộc thi" },
+        { "date": "19/10", "label": "Vòng 1: Khám phá (Discover)" },
+        { "date": "26/10", "label": "Hạn nộp proposal Vòng 1" },
+        { "date": "2/11", "label": "Công bố Top 20" },
+        { "date": "9/11", "label": "Hạn nộp MVP Vòng 2" },
+        { "date": "16/11", "label": "Công bố Top 10" },
+        { "date": "21/11", "label": "Chung kết & Demo" }
       ],
       "journey": {
         "title": "Hành trình cuộc thi",
+        "roundLabel": "Vòng {number}",
         "rounds": [
           {
-            "title": "Vòng 1 - Khám phá (Discover)",
-            "description": "Mỗi đội sẽ gửi một bản đề xuất (proposal), trong đó trình bày cách tiếp cận để phân tích bài toán kinh doanh và đưa ra giải pháp công nghệ phù hợp nhằm giải quyết vấn đề được lựa chọn."
+            "title": "Discover",
+            "date": "26/10 – 02/11",
+            "summary": "Ban tổ chức đánh giá các proposal để tìm ra những ý tưởng sáng tạo, khả thi và phù hợp nhất với bài toán.",
+            "selectionNote": "Kết quả sau vòng",
+            "selection": "Top 20 đội"
           },
           {
-            "title": "Vòng 2 - Xây dựng (Build)",
-            "description": "Các đội được lựa chọn sẽ bước vào <bold>Hackathon Week</bold>, nơi biến ý tưởng trong proposal thành một sản phẩm MVP có thể hoạt động và đáp ứng yêu cầu của bài toán.\n\nTrong quá trình phát triển, các đội có thể tận dụng các công cụ AI để hỗ trợ xây dựng sản phẩm, đồng thời thể hiện khả năng tư duy giải quyết vấn đề, làm chủ công nghệ và sử dụng AI một cách hiệu quả, có trách nhiệm."
+            "title": "Build",
+            "date": "09/11 – 16/11",
+            "summary": "Các đội phát triển ý tưởng thành MVP. Ban tổ chức đánh giá sản phẩm, năng lực kỹ thuật và cách giải quyết vấn đề.",
+            "selectionNote": "Kết quả sau vòng",
+            "selection": "Top 10 đội"
           },
           {
-            "title": "Vòng 3 - Hoàn thiện (Deliver)",
-            "description": "Các đội lọt vào vòng chung kết sẽ nhận thêm một yêu cầu thay đổi (change request) để mô phỏng những tình huống phát sinh khi làm việc với khách hàng thực tế.\n\nSau khi hoàn thiện giải pháp, các đội sẽ trình bày sản phẩm cuối cùng và thuyết trình trước hội đồng giám khảo.\n\nVòng chung kết sẽ được tổ chức <bold>trực tiếp tại văn phòng Netcompany TP. Hồ Chí Minh</bold> dành cho các đội tại TP. Hồ Chí Minh và <bold>trực tuyến</bold> dành cho các đội đến từ những khu vực khác."
+            "title": "Deliver",
+            "date": "21/11",
+            "summary": "Top 10 hoàn thiện giải pháp, demo sản phẩm và thuyết trình trực tiếp trước hội đồng giám khảo tại vòng chung kết.",
+            "selectionNote": "Chặng cuối",
+            "selection": "Demo & Chung kết"
           }
         ],
         "viewRules": "Xem chi tiết thể lệ"
-      }
+      },
+      "milestones": "Các mốc quan trọng"
     },
     "prizes": {
       "title": "Giải thưởng",
@@ -287,6 +298,34 @@
     "videoRecap": {
       "title": "Recap 2024",
       "subtitle": "Xem lại những khoảnh khắc đáng nhớ của IT Consultant Challenge 2024"
+    },
+    "faq": {
+      "eyebrow": "Bạn cần biết",
+      "title": "Câu hỏi thường gặp",
+      "description": "Giải đáp nhanh những câu hỏi phổ biến trước khi bạn và đồng đội bắt đầu hành trình.",
+      "viewAll": "Xem tất cả câu hỏi",
+      "items": [
+        {
+          "question": "Cuộc thi gồm những vòng nào?",
+          "answer": "Cuộc thi gồm ba vòng loại trực tiếp: Discover, Build và Deliver. Sau vòng Discover chọn Top 20, sau vòng Build chọn Top 10 vào vòng chung kết Demo."
+        },
+        {
+          "question": "Mỗi đội có bao nhiêu thành viên?",
+          "answer": "Mỗi đội gồm 3 thành viên là sinh viên hoặc người trẻ yêu công nghệ, quan tâm đến phát triển phần mềm và tư vấn CNTT."
+        },
+        {
+          "question": "Cuộc thi được tổ chức online hay trực tiếp?",
+          "answer": "Vòng Discover và Build diễn ra online. Chung kết được tổ chức trực tiếp tại văn phòng Netcompany TP.HCM cho đội tại TP.HCM và online cho đội ở khu vực khác."
+        },
+        {
+          "question": "Đội thi có được sử dụng AI không?",
+          "answer": "Có. AI nên được dùng như một công cụ hỗ trợ. Đội phải kiểm chứng nội dung, đánh giá tính khả thi của sản phẩm và chịu trách nhiệm cho toàn bộ bài làm; không nên sử dụng slide được tạo 100% bằng AI."
+        },
+        {
+          "question": "Có giới hạn công nghệ sử dụng không?",
+          "answer": "Không. Đội có thể chọn ngôn ngữ, framework và công nghệ phù hợp nhất với giải pháp của mình."
+        }
+      ]
     },
     "faqLink": "Câu hỏi thường gặp",
     "footer": {

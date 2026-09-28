@@ -24,7 +24,9 @@ const content: Record<
                 <strong>Idea Submission</strong> (online proposal),{' '}
                 <strong>MVP Build-a-thon</strong> (development and online MVP
                 submission), and <strong>Pitching</strong> (change request,
-                refinement, and final pitch).
+                refinement, and final pitch). Discover selects the Top 20 teams,
+                Build selects the Top 10, and those finalists present their demo
+                on 21 November.
               </>
             ),
           },
@@ -55,7 +57,7 @@ const content: Record<
           {
             question: 'Is English required?',
             answer:
-              'Yes. The case study and official communications are in English, so English proficiency is highly recommended.',
+              'No. English proficiency is an advantage because the case study, official communications, and presentation slides are provided or prepared in English.',
           },
         ],
       },
@@ -65,7 +67,7 @@ const content: Record<
           {
             question: 'What do we need to submit?',
             answer:
-              'Requirements vary by round and will be communicated before each stage. Please check your email carefully.',
+              'Requirements vary by round and will be communicated before each stage. Please check your email and the internal announcement channel regularly.',
           },
           {
             question: 'Can we modify a submission after the deadline?',
@@ -103,12 +105,12 @@ const content: Record<
           {
             question: 'How are submissions evaluated?',
             answer:
-              'Before each round, the Organiser will email the judging criteria and results. Every team member should register with a valid email and check it regularly.',
+              'Before each round, the Organiser will email the judging criteria, as determined by the Organiser, and the results. Every team member should register with a valid email and check it regularly.',
           },
           {
-            question: 'Must every member attend the final?',
+            question: 'How will the use of AI be evaluated?',
             answer:
-              'Yes. All members are encouraged to attend the presentation and Q&A.',
+              'AI should be used as a supporting tool, not as a substitute for the team’s thinking and ownership. The Organiser values teams that use AI responsibly, validate AI-generated content, and assess the feasibility of their product. Teams should understand and be able to defend every part of their submission, and should avoid using presentation slides that are entirely AI-generated.',
           },
         ],
       },
@@ -152,7 +154,7 @@ const content: Record<
           {
             question: 'Who can I contact?',
             answer:
-              'Reply to the official competition email or message the Netcompany Vietnam Facebook page. Report submission issues as soon as possible; extensions are reviewed case by case.',
+              'Reply to the official competition email or contact the Organiser. Please report submission issues as soon as possible; extension requests are reviewed case by case.',
           },
         ],
       },
@@ -170,10 +172,12 @@ const content: Record<
             question: 'Cuộc thi được tổ chức như thế nào?',
             answer: (
               <>
-                Cuộc thi gồm ba vòng loại trực tiếp: <strong>Idea Submission</strong>{' '}
-                (nộp đề xuất online), <strong>MVP Build-a-thon</strong> (phát triển và
-                nộp MVP online), và <strong>Pitching</strong> (xử lý yêu cầu thay
-                đổi, hoàn thiện và thuyết trình).
+                Cuộc thi gồm ba vòng loại trực tiếp:{' '}
+                <strong>Idea Submission</strong> (nộp đề xuất online),{' '}
+                <strong>MVP Build-a-thon</strong> (phát triển và nộp MVP
+                online), và <strong>Pitching</strong> (xử lý yêu cầu thay đổi,
+                hoàn thiện và thuyết trình). Vòng Discover chọn Top 20 đội, vòng
+                Build chọn Top 10 và các đội chung kết sẽ demo vào ngày 21/11.
               </>
             ),
           },
@@ -204,7 +208,7 @@ const content: Record<
           {
             question: 'Tiếng Anh có bắt buộc không?',
             answer:
-              'Có. Case study và thông tin chính thức được cung cấp bằng tiếng Anh, vì vậy khả năng tiếng Anh là lợi thế quan trọng.',
+              'Không. Khả năng tiếng Anh là một lợi thế vì case study, thông tin chính thức và slide thuyết trình được cung cấp hoặc chuẩn bị bằng tiếng Anh.',
           },
         ],
       },
@@ -214,7 +218,7 @@ const content: Record<
           {
             question: 'Mỗi vòng cần nộp gì?',
             answer:
-              'Yêu cầu khác nhau theo từng vòng và sẽ được thông báo trước. Hãy kiểm tra email thường xuyên.',
+              'Yêu cầu khác nhau theo từng vòng và sẽ được thông báo trước. Hãy kiểm tra email hoặc kênh thông báo nội bộ thường xuyên.',
           },
           {
             question: 'Có thể sửa bài sau hạn chót không?',
@@ -253,12 +257,12 @@ const content: Record<
           {
             question: 'Bài thi được đánh giá thế nào?',
             answer:
-              'Trước mỗi vòng, Ban tổ chức sẽ email tiêu chí chấm và kết quả. Mỗi thành viên cần dùng email hợp lệ và kiểm tra thường xuyên.',
+              'Trước mỗi vòng, Ban tổ chức sẽ email tiêu chí chấm do Ban tổ chức quyết định và kết quả. Mỗi thành viên cần dùng email hợp lệ và kiểm tra thường xuyên.',
           },
           {
-            question: 'Tất cả thành viên có cần dự chung kết?',
+            question: 'Ban tổ chức đánh giá việc sử dụng AI như thế nào?',
             answer:
-              'Có. Tất cả thành viên được khuyến khích tham gia phần thuyết trình và hỏi đáp.',
+              'AI nên được sử dụng như một công cụ hỗ trợ, không thay thế tư duy và trách nhiệm của đội thi. Ban tổ chức đánh giá cao các đội sử dụng AI có kiểm soát, biết kiểm chứng nội dung do AI tạo và đánh giá tính khả thi của sản phẩm. Đội cần hiểu, giải thích và bảo vệ được toàn bộ bài làm; đồng thời không nên sử dụng slide được tạo 100% bằng AI.',
           },
         ],
       },
@@ -302,7 +306,7 @@ const content: Record<
           {
             question: 'Liên hệ ai khi cần hỗ trợ?',
             answer:
-              'Trả lời email chính thức của cuộc thi hoặc nhắn Facebook Netcompany Vietnam. Hãy báo sự cố nộp bài sớm nhất có thể; yêu cầu gia hạn được xem xét theo từng trường hợp.',
+              'Trả lời email chính thức của cuộc thi hoặc liên hệ Ban Tổ Chức. Hãy báo sự cố nộp bài sớm nhất có thể; yêu cầu gia hạn được xem xét theo từng trường hợp.',
           },
         ],
       },

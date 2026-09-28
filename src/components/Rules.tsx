@@ -34,15 +34,12 @@ const Rules = ({ locale }: RulesProps) => {
                 {t(`timeline.journey.rounds.${index}.title`)}
               </h3>
               <p className='max-w-sm whitespace-pre-line text-sm leading-6 text-white/70'>
-                {t.rich(`timeline.journey.rounds.${index}.description`, {
-                  bold: (chunks) => <strong>{chunks}</strong>,
-                })}
+                {t(`timeline.journey.rounds.${index}.summary`)}
               </p>
             </article>
           );
         })}
       </div>
-
     </section>
   );
 };
