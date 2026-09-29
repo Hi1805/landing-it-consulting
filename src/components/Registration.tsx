@@ -26,7 +26,14 @@ const Registration = () => {
     );
   };
   useEffect(() => {
-    setIsFormClosed(new Date() >= REGISTRATION_CLOSE_DATE);
+    const updateRegistrationStatus = () => {
+      setIsFormClosed(new Date() >= REGISTRATION_CLOSE_DATE);
+    };
+
+    updateRegistrationStatus();
+    const timer = window.setInterval(updateRegistrationStatus, 1000);
+
+    return () => window.clearInterval(timer);
   }, []);
 
   return (

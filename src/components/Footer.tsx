@@ -58,10 +58,10 @@ const Footer = ({ locale = 'vi' }: { locale?: string }) => {
             <li className='flex gap-x-2'>
               <MailContact className='h-6 w-6' />
               <Link
-                href='mailto:recruitment.vn@netcompany.com'
+                href='mailto:EB.VN@netcompany.com'
                 className='inline-block flex-1 break-all text-white transition-all hover:text-primary'
               >
-                recruitment.vn@netcompany.com
+                EB.VN@netcompany.com
               </Link>
             </li>
           </ul>

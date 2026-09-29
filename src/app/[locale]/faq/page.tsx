@@ -24,9 +24,9 @@ const content: Record<
                 <strong>Idea Submission</strong> (online proposal),{' '}
                 <strong>MVP Build-a-thon</strong> (development and online MVP
                 submission), and <strong>Pitching</strong> (change request,
-                refinement, and final pitch). Discover selects the Top 20 teams,
-                Build selects the Top 10, and those finalists present their demo
-                on 21 November.
+                refinement, and final pitch). The Organiser determines how many
+                teams advance based on participation and submission quality.
+                Selected finalists present their demo on 21 November.
               </>
             ),
           },
@@ -48,7 +48,7 @@ const content: Record<
           {
             question: 'Who can participate?',
             answer:
-              'Students and young technology enthusiasts interested in software development, digital solutions, and IT consulting. Participants compete in teams of three.',
+              'Students and young technology enthusiasts interested in software development, digital solutions, and IT consulting. Each team has up to three members.',
           },
           {
             question: 'Can we change team members after registration?',
@@ -122,8 +122,10 @@ const content: Record<
             answer: (
               <>
                 The top three teams receive VND 60 million, VND 30 million, and
-                VND 15 million. Each prize is split equally among team members
-                and sent as Got It e-vouchers. Learn how to use them{' '}
+                VND 15 million in cash prizes. Outstanding teams also receive
+                scholarships from Engineer Pro and DuaEdu. Cash prizes are split
+                equally among team members and sent as Got It e-vouchers. Learn
+                how to use them{' '}
                 <a
                   className='text-primary underline'
                   href='https://www.gotit.vn/how-to-use'
@@ -176,8 +178,9 @@ const content: Record<
                 <strong>Idea Submission</strong> (nộp đề xuất online),{' '}
                 <strong>MVP Build-a-thon</strong> (phát triển và nộp MVP
                 online), và <strong>Pitching</strong> (xử lý yêu cầu thay đổi,
-                hoàn thiện và thuyết trình). Vòng Discover chọn Top 20 đội, vòng
-                Build chọn Top 10 và các đội chung kết sẽ demo vào ngày 21/11.
+                hoàn thiện và thuyết trình). Ban tổ chức quyết định số đội đi
+                tiếp dựa trên số lượng đội thi và chất lượng bài thi. Các đội
+                được chọn vào chung kết sẽ demo vào ngày 21/11.
               </>
             ),
           },
@@ -199,7 +202,7 @@ const content: Record<
           {
             question: 'Ai có thể tham gia?',
             answer:
-              'Sinh viên và các bạn trẻ yêu công nghệ, quan tâm phát triển phần mềm, giải pháp số và tư vấn CNTT. Mỗi đội gồm ba thành viên.',
+              'Sinh viên và các bạn trẻ yêu công nghệ, quan tâm phát triển phần mềm, giải pháp số và tư vấn CNTT. Mỗi đội có tối đa ba thành viên.',
           },
           {
             question: 'Có thể đổi thành viên sau đăng ký không?',
@@ -273,9 +276,10 @@ const content: Record<
             question: 'Giải thưởng được trao thế nào?',
             answer: (
               <>
-                Ba đội đứng đầu nhận 60, 30 và 15 triệu VNĐ. Giải được chia đều
-                cho thành viên và gửi dưới dạng e-voucher Got It. Xem hướng dẫn
-                sử dụng{' '}
+                Ba đội đứng đầu nhận giải hiện kim 60, 30 và 15 triệu VNĐ. Các
+                đội nổi bật còn nhận học bổng từ Engineer Pro và DuaEdu. Giải
+                hiện kim được chia đều cho thành viên và gửi dưới dạng e-voucher
+                Got It. Xem hướng dẫn sử dụng{' '}
                 <a
                   className='text-primary underline'
                   href='https://www.gotit.vn/how-to-use'

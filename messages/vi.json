@@ -32,14 +32,14 @@
       "eventPartner": "Đối tác sự kiện",
       "summary": "Nhập vai IT Consultant: hiểu bài toán kinh doanh, xây dựng sản phẩm, thích ứng với thay đổi và thuyết trình giải pháp.",
       "highlights": [
-        "Đội 3 thành viên",
+        "Tối đa 3 thành viên",
         "Dự án thực tế",
         "Ứng dụng AI có trách nhiệm"
       ],
       "intro": [
         "<bold>IT Consultant Challenge</bold> là cuộc thi theo đội, nơi bạn vào vai <bold>chuyên gia tư vấn công nghệ (IT Consultant)</bold> để phân tích những bài toán kinh doanh thực tế, từ đó đề xuất và xây dựng giải pháp công nghệ phù hợp.",
         "Sau hai mùa thi thành công vào năm <bold>2024</bold> và <bold>2025</bold>, cuộc thi trở lại với hình thức hoàn toàn mới cùng chủ đề <bold>“Prompt to Production”</bold>. AI đang thay đổi cách phần mềm được tạo ra, nên Developer ngày nay cần nhiều hơn kỹ năng viết code. Bạn cần hiểu nhu cầu kinh doanh, biết cách làm việc hiệu quả với AI, đưa ra lựa chọn kỹ thuật có cơ sở và tự tin giải thích, chịu trách nhiệm về giải pháp mình xây dựng.",
-        "Mỗi đội gồm <bold>ba thành viên</bold> sẽ cùng giải quyết một tình huống lấy cảm hứng từ dự án thực tế. Qua cuộc thi, bạn sẽ trải nghiệm hành trình làm việc của một IT Consultant: tìm hiểu bài toán kinh doanh, thiết kế giải pháp, xây dựng sản phẩm có thể hoạt động, điều chỉnh khi yêu cầu thay đổi và trình bày sản phẩm cuối cùng."
+        "Mỗi đội có <bold>tối đa ba thành viên</bold> sẽ cùng giải quyết một tình huống lấy cảm hứng từ dự án thực tế. Qua cuộc thi, bạn sẽ trải nghiệm hành trình làm việc của một IT Consultant: tìm hiểu bài toán kinh doanh, thiết kế giải pháp, xây dựng sản phẩm có thể hoạt động, điều chỉnh khi yêu cầu thay đổi và trình bày sản phẩm cuối cùng."
       ],
       "cards": [
         {
@@ -52,7 +52,7 @@
         }
       ],
       "description": [
-        "<extrabold>IT Consultant Challenge</extrabold>  là một cuộc thi theo nhóm nơi người tham gia sẽ nhập vai làm một IT Consultant thực thụ. Mỗi đội gồm bốn thành viên và một người hướng dẫn giàu kinh nghiệm, đồng hành cùng nhau giải quyết một vấn đề thực tiễn do Ban tổ chức đưa ra. Từ việc phân tích vấn đề, đề xuất giải pháp khả thi, cho đến việc trình bày ý tưởng một cách thuyết phục, cuộc thi đòi hỏi tinh thần đồng đội, khả năng tư duy phản biện sắc bén và kỹ năng giải quyết vấn đề sáng tạo.",
+        "<extrabold>IT Consultant Challenge</extrabold> là một cuộc thi theo nhóm nơi người tham gia sẽ nhập vai làm một IT Consultant thực thụ. Mỗi đội có tối đa ba thành viên và một người hướng dẫn giàu kinh nghiệm, đồng hành cùng nhau giải quyết một vấn đề thực tiễn do Ban tổ chức đưa ra. Từ việc phân tích vấn đề, đề xuất giải pháp khả thi, cho đến việc trình bày ý tưởng một cách thuyết phục, cuộc thi đòi hỏi tinh thần đồng đội, khả năng tư duy phản biện sắc bén và kỹ năng giải quyết vấn đề sáng tạo.",
         "Sự kiện được phối hợp thực hiện bởi Công ty {netcompanyName} Việt Nam và Cộng đồng Tech dành cho các bạn trẻ {codeMelyName}."
       ],
       "miniChallenge": "[MINI-CHALLENGE] AI FOR LIFE – THỬ THÁCH Ý TƯỞNG AI TRONG ĐỜI SỐNG",
@@ -83,9 +83,9 @@
         { "date": "1/10", "label": "Khởi động cuộc thi" },
         { "date": "19/10", "label": "Vòng 1: Khám phá (Discover)" },
         { "date": "26/10", "label": "Hạn nộp proposal Vòng 1" },
-        { "date": "2/11", "label": "Công bố Top 20" },
+        { "date": "2/11", "label": "Công bố kết quả Vòng 1" },
         { "date": "9/11", "label": "Hạn nộp MVP Vòng 2" },
-        { "date": "16/11", "label": "Công bố Top 10" },
+        { "date": "16/11", "label": "Công bố kết quả Vòng 2" },
         { "date": "21/11", "label": "Chung kết & Demo" }
       ],
       "journey": {
@@ -94,22 +94,22 @@
         "rounds": [
           {
             "title": "Discover",
-            "date": "26/10 – 02/11",
+            "date": "19/10 – 26/10",
             "summary": "Ban tổ chức đánh giá các proposal để tìm ra những ý tưởng sáng tạo, khả thi và phù hợp nhất với bài toán.",
             "selectionNote": "Kết quả sau vòng",
-            "selection": "Top 20 đội"
+            "selection": "Công bố kết quả Vòng 1"
           },
           {
             "title": "Build",
-            "date": "09/11 – 16/11",
+            "date": "02/11 – 09/11",
             "summary": "Các đội phát triển ý tưởng thành MVP. Ban tổ chức đánh giá sản phẩm, năng lực kỹ thuật và cách giải quyết vấn đề.",
             "selectionNote": "Kết quả sau vòng",
-            "selection": "Top 10 đội"
+            "selection": "Công bố kết quả Vòng 2"
           },
           {
             "title": "Deliver",
-            "date": "21/11",
-            "summary": "Top 10 hoàn thiện giải pháp, demo sản phẩm và thuyết trình trực tiếp trước hội đồng giám khảo tại vòng chung kết.",
+            "date": "16/11 – 21/11",
+            "summary": "Các đội được chọn hoàn thiện giải pháp, demo sản phẩm và thuyết trình trực tiếp trước hội đồng giám khảo tại vòng chung kết.",
             "selectionNote": "Chặng cuối",
             "selection": "Demo & Chung kết"
           }
@@ -132,14 +132,44 @@
         "Top 10 team"
       ],
       "totalLabel": "Tổng giá trị giải thưởng",
-      "totalAmount": "300 triệu VNĐ",
+      "totalAmount": "Hơn 300 triệu VNĐ",
+      "benefitSummary": "Hiện kim và học bổng đào tạo chuyên sâu",
+      "scholarshipIntro": "Quyền lợi học bổng dành cho các đội nổi bật qua từng vòng thi",
+      "scholarshipRateLabel": "học bổng",
+      "minimumTotalLabel": "Tổng giá trị tối thiểu (tổng các suất)",
       "placements": ["Quán quân", "Á quân 1", "Á quân 2"],
       "amounts": ["60 triệu VNĐ", "30 triệu VNĐ", "15 triệu VNĐ"],
+      "scholarships": [
+        {
+          "provider": "Engineer Pro",
+          "group": "Top 20",
+          "discount": "30%",
+          "course": "Tất cả các khóa học",
+          "detail": "Có thể đăng ký nhiều khóa cùng một lúc",
+          "minimumTotal": "51 triệu VNĐ"
+        },
+        {
+          "provider": "DuaEdu",
+          "group": "Top 10",
+          "discount": "50%",
+          "course": "Khóa học Data Analyst",
+          "detail": "Học bổng chuyên sâu về phân tích dữ liệu",
+          "minimumTotal": "61 triệu VNĐ"
+        },
+        {
+          "provider": "DuaEdu",
+          "group": "Top 5",
+          "discount": "70%",
+          "course": "Khóa học Data Analyst",
+          "detail": "Mức học bổng cao nhất dành cho Top 5",
+          "minimumTotal": "85 triệu VNĐ"
+        }
+      ],
       "note": "Giải thưởng hiện kim sẽ được trao dưới dạng e-voucher Got It.",
       "more": ""
     },
     "timeCounter": {
-      "title": "Thời hạn đăng ký",
+      "title": "Đăng ký đến hết ngày 18/10/2026",
       "titleClosed": "Sự kiện diễn ra sau",
       "days": "ngày",
       "hours": "giờ",
@@ -230,7 +260,7 @@
         "email": {
           "label": "Email"
         },
-        "note": "(*) Mỗi đội thi gồm tối đa 4 thành viên."
+        "note": "(*) Mỗi đội thi gồm tối đa 3 thành viên."
       },
       "submit": "Đăng ký",
       "success": {
@@ -307,11 +337,11 @@
       "items": [
         {
           "question": "Cuộc thi gồm những vòng nào?",
-          "answer": "Cuộc thi gồm ba vòng loại trực tiếp: Discover, Build và Deliver. Sau vòng Discover chọn Top 20, sau vòng Build chọn Top 10 vào vòng chung kết Demo."
+          "answer": "Cuộc thi gồm ba vòng loại trực tiếp: Discover, Build và Deliver. Số đội đi tiếp sau mỗi vòng sẽ được Ban tổ chức quyết định dựa trên số lượng đội thi và chất lượng bài thi."
         },
         {
           "question": "Mỗi đội có bao nhiêu thành viên?",
-          "answer": "Mỗi đội gồm 3 thành viên là sinh viên hoặc người trẻ yêu công nghệ, quan tâm đến phát triển phần mềm và tư vấn CNTT."
+          "answer": "Mỗi đội có tối đa 3 thành viên là sinh viên hoặc người trẻ yêu công nghệ, quan tâm đến phát triển phần mềm và tư vấn CNTT."
         },
         {
           "question": "Cuộc thi được tổ chức online hay trực tiếp?",

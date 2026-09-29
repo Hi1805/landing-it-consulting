@@ -52,16 +52,16 @@ const About = () => {
               height={60}
               className='h-11 w-24 object-contain'
             />
-            <Image
+            {/* <Image
               src='/companies/DevWeb.png'
               alt='DevWeb'
               width={160}
               height={60}
               className='h-11 w-24 object-contain'
-            />
+            /> */}
             <Image
-              src='/companies/Viblo.png'
-              alt='Viblo'
+              src='/companies/DuaEdu.png'
+              alt='DuaEdu'
               width={120}
               height={60}
               className='h-11 w-24 object-contain'

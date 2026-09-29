@@ -2,7 +2,7 @@
 
 This project is an landing page built with Next.js and TypeScript. It includes various components and assets to create an engaging and interactive user experience. The landing page is designed for the IT Consultant Challenge, a team-based competition where participants develop innovative solutions for real-life IT problems.
 
-The IT Consultant Challenge is an engaging team-based competition where participants step into the role of IT consultants. In groups of four, you are tasked with solving real-life IT problems by developing innovative, digitalized solutions for a client. This challenge simulates the dynamic environment of IT consulting
+The IT Consultant Challenge is an engaging team-based competition where participants step into the role of IT consultants. In teams of up to three, you are tasked with solving real-life IT problems by developing innovative, digitalized solutions for a client. This challenge simulates the dynamic environment of IT consulting
 
 ## Project Structure
 
