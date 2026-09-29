@@ -169,8 +169,11 @@
       "more": ""
     },
     "timeCounter": {
-      "title": "Đăng ký đến hết ngày 18/10/2026",
+      "eyebrow": "Thời hạn đăng ký",
+      "title": "Đăng ký đóng sau",
+      "deadline": "Hết ngày 18/10/2026 · Giờ Việt Nam",
       "titleClosed": "Sự kiện diễn ra sau",
+      "closedDescription": "Cảm ơn bạn đã quan tâm đến IT Consultant Challenge 2026.",
       "days": "ngày",
       "hours": "giờ",
       "minutes": "phút",
@@ -337,7 +340,7 @@
       "items": [
         {
           "question": "Cuộc thi gồm những vòng nào?",
-          "answer": "Cuộc thi gồm ba vòng loại trực tiếp: Discover, Build và Deliver. Số đội đi tiếp sau mỗi vòng sẽ được Ban tổ chức quyết định dựa trên số lượng đội thi và chất lượng bài thi."
+          "answer": "Cuộc thi gồm ba vòng loại trực tiếp: Idea Submission (19/10–26/10), MVP Build-a-thon (02/11–09/11) và Pitching (16/11–21/11). Số đội đi tiếp sau mỗi vòng sẽ được Ban tổ chức quyết định dựa trên số lượng đội thi và chất lượng bài thi."
         },
         {
           "question": "Mỗi đội có bao nhiêu thành viên?",

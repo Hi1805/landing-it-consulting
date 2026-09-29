@@ -50,8 +50,8 @@ export default function Prizes({ locale: _locale }: PrizesProps) {
           </h2>
         </div>
 
-        <div className='border-primary/30 from-primary/20 to-secondary/10 relative mx-auto mt-9 max-w-4xl overflow-hidden rounded-[32px] border bg-gradient-to-br via-[#173936] px-6 py-8 text-center shadow-[0_24px_90px_rgba(255,184,78,.12)] md:px-12 md:py-10'>
-          <Sparkles className='text-primary/[.07] absolute -right-5 -top-5 h-32 w-32' />
+        <div className='border-primary/30 from-primary/20 to-secondary/10 relative mx-auto mt-9 max-w-4xl overflow-hidden rounded-3xl border bg-gradient-to-br via-[#173936] px-5 py-7 text-center shadow-[0_24px_90px_rgba(255,184,78,.12)] sm:rounded-[32px] sm:px-6 sm:py-8 md:px-12 md:py-10'>
+          <Sparkles className='text-primary/[.07] absolute -bottom-5 -right-3 h-20 w-20 sm:h-24 sm:w-24 md:-right-5 md:-top-5 md:bottom-auto md:h-32 md:w-32' />
           <p className='relative text-xs font-bold uppercase tracking-[.22em] text-white/60 md:text-sm'>
             {t('prizes.totalLabel')}
           </p>
@@ -72,10 +72,10 @@ export default function Prizes({ locale: _locale }: PrizesProps) {
           <div className='mt-10 grid items-stretch gap-4 md:grid-cols-3'>
             {placements.map((placement, index) => (
               <article
-                className={`relative flex min-h-[245px] flex-col overflow-hidden rounded-[28px] border bg-gradient-to-b p-7 ${cashCardStyles[index]}`}
+                className={`relative flex min-h-[220px] flex-col overflow-hidden rounded-3xl border bg-gradient-to-b p-5 sm:min-h-[245px] sm:rounded-[28px] sm:p-7 ${cashCardStyles[index]}`}
                 key={placement}
               >
-                <span className='absolute -right-2 -top-5 font-montserrat text-[108px] font-black leading-none text-white/[.04]'>
+                <span className='pointer-events-none absolute inset-0 flex items-center justify-center font-montserrat text-[88px] font-black leading-none text-white/[.04] sm:text-[104px] xl:text-[120px]'>
                   0{index + 1}
                 </span>
                 <div className='relative flex items-center justify-between'>

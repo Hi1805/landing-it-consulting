@@ -37,7 +37,7 @@ const About = () => {
           <span className='mb-5 text-xs font-bold uppercase tracking-[.2em] text-secondary'>
             {t('about.eventPartner')}
           </span>
-          <div className='grid w-full grid-cols-2 place-items-center gap-5 sm:grid-cols-4'>
+          <div className='grid w-full grid-cols-2 place-items-center gap-5 sm:grid-cols-3'>
             <Image
               src='/companies/engineerpro.png'
               alt='engineerpro'
@@ -70,7 +70,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='relative border-y border-white/15 py-10 lg:py-14 lg:pl-24'>
+      <div className='relative border-white/15 py-10 lg:py-14 lg:pl-24'>
         <div className='absolute bottom-14 left-0 top-14 hidden w-16 items-center justify-center lg:flex'>
           <span className='whitespace-nowrap font-montserrat text-4xl font-black uppercase tracking-[.12em] text-white/[.09] [writing-mode:vertical-rl]'>
             IT Consultant Challenge

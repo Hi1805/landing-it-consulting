@@ -11,6 +11,7 @@ import Registration from '@/components/Registration';
 import Rules from '@/components/Rules';
 import ScrollToTop from '@/components/ScrollToTop';
 import Timeline from '@/components/Timeline';
+import TimeCounter from '@/components/TimeCounter';
 import { MotionGlobalConfig } from 'framer-motion';
 import { isMobile } from 'react-device-detect';
 import { Bounce, ToastContainer, ToastContainerProps } from 'react-toastify';
@@ -47,6 +48,7 @@ export default function Home({
         <Rules locale={locale} />
         <Timeline locale={locale} />
         <Prizes locale={locale} />
+        <TimeCounter locale={locale} />
         <Registration />
         <FAQ locale={locale} />
         {/* <Organizer /> */}

@@ -169,8 +169,11 @@
       "more": ""
     },
     "timeCounter": {
-      "title": "Registration closes after 18 Oct 2026",
+      "eyebrow": "Registration deadline",
+      "title": "Registration closes in",
+      "deadline": "End of 18 Oct 2026 · Vietnam time",
       "titleClosed": "Event time",
+      "closedDescription": "Thank you for your interest in IT Consultant Challenge 2026.",
       "days": "days",
       "hours": "hours",
       "minutes": "minutes",
@@ -337,7 +340,7 @@
       "items": [
         {
           "question": "What are the competition rounds?",
-          "answer": "There are three knockout rounds: Discover, Build and Deliver. The Organiser will determine how many teams advance after each round based on the number of participating teams and submission quality."
+          "answer": "There are three knockout rounds: Idea Submission (19–26 October), MVP Build-a-thon (2–9 November), and Pitching (16–21 November). The Organiser will determine how many teams advance after each round based on participation and submission quality."
         },
         {
           "question": "How many members are on a team?",

@@ -21,12 +21,14 @@ const content: Record<
             answer: (
               <>
                 The competition has three knockout rounds:{' '}
-                <strong>Idea Submission</strong> (online proposal),{' '}
-                <strong>MVP Build-a-thon</strong> (development and online MVP
-                submission), and <strong>Pitching</strong> (change request,
+                <strong>Idea Submission</strong> (19–26 October, online
+                proposal), <strong>MVP Build-a-thon</strong> (2–9 November,
+                development and online MVP submission), and{' '}
+                <strong>Pitching</strong> (16–21 November, change request,
                 refinement, and final pitch). The Organiser determines how many
-                teams advance based on participation and submission quality.
-                Selected finalists present their demo on 21 November.
+                teams advance after each round based on participation and
+                submission quality. Selected finalists present their demo on 21
+                November.
               </>
             ),
           },
@@ -175,12 +177,13 @@ const content: Record<
             answer: (
               <>
                 Cuộc thi gồm ba vòng loại trực tiếp:{' '}
-                <strong>Idea Submission</strong> (nộp đề xuất online),{' '}
-                <strong>MVP Build-a-thon</strong> (phát triển và nộp MVP
-                online), và <strong>Pitching</strong> (xử lý yêu cầu thay đổi,
-                hoàn thiện và thuyết trình). Ban tổ chức quyết định số đội đi
-                tiếp dựa trên số lượng đội thi và chất lượng bài thi. Các đội
-                được chọn vào chung kết sẽ demo vào ngày 21/11.
+                <strong>Idea Submission</strong> (19/10–26/10, nộp đề xuất
+                online), <strong>MVP Build-a-thon</strong> (02/11–09/11, phát
+                triển và nộp MVP online), và <strong>Pitching</strong>{' '}
+                (16/11–21/11, xử lý yêu cầu thay đổi, hoàn thiện và thuyết
+                trình). Ban tổ chức quyết định số đội đi tiếp sau mỗi vòng dựa
+                trên số lượng đội thi và chất lượng bài thi. Các đội được chọn
+                vào chung kết sẽ demo vào ngày 21/11.
               </>
             ),
           },
