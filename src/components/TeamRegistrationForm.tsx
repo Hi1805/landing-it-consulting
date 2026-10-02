@@ -14,7 +14,6 @@ import {
   teamFormSchema,
 } from '@/lib/validators/teamFormSchema';
 import { Form, Formik, FormikHelpers } from 'formik';
-import { Delete, Plus } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useRef, useState } from 'react';
 import { FaSpinner } from 'react-icons/fa';
@@ -28,8 +27,6 @@ interface TeamRegistrationFormProps {
 export interface MembersFormDataValue extends PersonalForm {
   index: number;
 }
-
-let indexCount = 2;
 
 export default function TeamRegistrationForm({
   onSubmitSuccess,
@@ -45,6 +42,7 @@ export default function TeamRegistrationForm({
   >([
     { index: 0, ...personalFormInitValue },
     { index: 1, ...personalFormInitValue },
+    { index: 2, ...personalFormInitValue },
   ]);
 
   const handleSubmit = async (
@@ -97,26 +95,6 @@ export default function TeamRegistrationForm({
     } catch (error) {
       toast.error(t('registration.failed.toastMessage'));
     }
-  };
-
-  const handleAddMember = () => {
-    setMembersFormData([
-      ...membersFormData,
-      { ...personalFormInitValue, index: indexCount++ },
-    ]);
-  };
-
-  const handleDeleteMember = (value: MembersFormDataValue) => {
-    if (value.index === selectedMemberIndex) {
-      const indexOfItem = membersFormData.indexOf(value);
-      if (indexOfItem === membersFormData.length - 1) {
-        setSelectedMemberIndex(membersFormData[indexOfItem - 1].index);
-      } else setSelectedMemberIndex(membersFormData[indexOfItem + 1].index);
-    }
-
-    setMembersFormData(
-      membersFormData.filter((data) => data.index !== value.index),
-    );
   };
 
   return (
@@ -175,27 +153,8 @@ export default function TeamRegistrationForm({
                         })
                       : data.fullName}
                   </span>
-                  {membersFormData.length > 2 && (
-                    <Delete
-                      className='h-6 w-6 transition-all hover:text-red-500'
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handleDeleteMember(data);
-                      }}
-                    />
-                  )}
                 </button>
               ))}
-              {membersFormData.length < 3 && (
-                <button
-                  type='button'
-                  className='sm: mt-4 flex items-center justify-around rounded-lg bg-[#7FFFF7] px-4 py-2 font-bold text-black hover:opacity-90 max-sm:gap-x-2'
-                  onClick={handleAddMember}
-                >
-                  <Plus />
-                  {t('registration.team.addMember')}
-                </button>
-              )}
             </div>
             <div className='col-span-4 sm:col-span-3'>
               {membersFormData.map((data, index) => (

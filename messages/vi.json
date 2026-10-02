@@ -32,14 +32,14 @@
       "eventPartner": "Đối tác sự kiện",
       "summary": "Nhập vai IT Consultant: hiểu bài toán kinh doanh, xây dựng sản phẩm, thích ứng với thay đổi và thuyết trình giải pháp.",
       "highlights": [
-        "Tối đa 3 thành viên",
+        "Đội 3 thành viên",
         "Dự án thực tế",
         "Ứng dụng AI có trách nhiệm"
       ],
       "intro": [
         "<bold>IT Consultant Challenge</bold> là cuộc thi theo đội, nơi bạn vào vai <bold>chuyên gia tư vấn công nghệ (IT Consultant)</bold> để phân tích những bài toán kinh doanh thực tế, từ đó đề xuất và xây dựng giải pháp công nghệ phù hợp.",
         "Sau hai mùa thi thành công vào năm <bold>2024</bold> và <bold>2025</bold>, cuộc thi trở lại với hình thức hoàn toàn mới cùng chủ đề <bold>“Prompt to Production”</bold>. AI đang thay đổi cách phần mềm được tạo ra, nên Developer ngày nay cần nhiều hơn kỹ năng viết code. Bạn cần hiểu nhu cầu kinh doanh, biết cách làm việc hiệu quả với AI, đưa ra lựa chọn kỹ thuật có cơ sở và tự tin giải thích, chịu trách nhiệm về giải pháp mình xây dựng.",
-        "Mỗi đội có <bold>tối đa ba thành viên</bold> sẽ cùng giải quyết một tình huống lấy cảm hứng từ dự án thực tế. Qua cuộc thi, bạn sẽ trải nghiệm hành trình làm việc của một IT Consultant: tìm hiểu bài toán kinh doanh, thiết kế giải pháp, xây dựng sản phẩm có thể hoạt động, điều chỉnh khi yêu cầu thay đổi và trình bày sản phẩm cuối cùng."
+        "Mỗi đội gồm <bold>ba thành viên</bold> sẽ cùng giải quyết một tình huống lấy cảm hứng từ dự án thực tế. Qua cuộc thi, bạn sẽ trải nghiệm hành trình làm việc của một IT Consultant: tìm hiểu bài toán kinh doanh, thiết kế giải pháp, xây dựng sản phẩm có thể hoạt động, điều chỉnh khi yêu cầu thay đổi và trình bày sản phẩm cuối cùng."
       ],
       "cards": [
         {
@@ -52,7 +52,7 @@
         }
       ],
       "description": [
-        "<extrabold>IT Consultant Challenge</extrabold> là một cuộc thi theo nhóm nơi người tham gia sẽ nhập vai làm một IT Consultant thực thụ. Mỗi đội có tối đa ba thành viên và một người hướng dẫn giàu kinh nghiệm, đồng hành cùng nhau giải quyết một vấn đề thực tiễn do Ban tổ chức đưa ra. Từ việc phân tích vấn đề, đề xuất giải pháp khả thi, cho đến việc trình bày ý tưởng một cách thuyết phục, cuộc thi đòi hỏi tinh thần đồng đội, khả năng tư duy phản biện sắc bén và kỹ năng giải quyết vấn đề sáng tạo.",
+        "<extrabold>IT Consultant Challenge</extrabold> là một cuộc thi theo nhóm nơi người tham gia sẽ nhập vai làm một IT Consultant thực thụ. Mỗi đội gồm ba thành viên và một người hướng dẫn giàu kinh nghiệm, đồng hành cùng nhau giải quyết một vấn đề thực tiễn do Ban tổ chức đưa ra. Từ việc phân tích vấn đề, đề xuất giải pháp khả thi, cho đến việc trình bày ý tưởng một cách thuyết phục, cuộc thi đòi hỏi tinh thần đồng đội, khả năng tư duy phản biện sắc bén và kỹ năng giải quyết vấn đề sáng tạo.",
         "Sự kiện được phối hợp thực hiện bởi Công ty {netcompanyName} Việt Nam và Cộng đồng Tech dành cho các bạn trẻ {codeMelyName}."
       ],
       "miniChallenge": "[MINI-CHALLENGE] AI FOR LIFE – THỬ THÁCH Ý TƯỞNG AI TRONG ĐỜI SỐNG",
@@ -263,7 +263,7 @@
         "email": {
           "label": "Email"
         },
-        "note": "(*) Mỗi đội thi gồm tối đa 3 thành viên."
+        "note": "(*) Mỗi đội thi gồm 3 thành viên."
       },
       "submit": "Đăng ký",
       "success": {
@@ -344,7 +344,7 @@
         },
         {
           "question": "Mỗi đội có bao nhiêu thành viên?",
-          "answer": "Mỗi đội có tối đa 3 thành viên là sinh viên hoặc người trẻ yêu công nghệ, quan tâm đến phát triển phần mềm và tư vấn CNTT."
+          "answer": "Mỗi đội gồm 3 thành viên là sinh viên hoặc người trẻ yêu công nghệ, quan tâm đến phát triển phần mềm và tư vấn CNTT."
         },
         {
           "question": "Cuộc thi được tổ chức online hay trực tiếp?",

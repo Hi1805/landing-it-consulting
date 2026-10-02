@@ -50,7 +50,7 @@ const content: Record<
           {
             question: 'Who can participate?',
             answer:
-              'Students and young technology enthusiasts interested in software development, digital solutions, and IT consulting. Each team has up to three members.',
+              'Students and young technology enthusiasts interested in software development, digital solutions, and IT consulting. Each team has three members.',
           },
           {
             question: 'Can we change team members after registration?',
@@ -205,7 +205,7 @@ const content: Record<
           {
             question: 'Ai có thể tham gia?',
             answer:
-              'Sinh viên và các bạn trẻ yêu công nghệ, quan tâm phát triển phần mềm, giải pháp số và tư vấn CNTT. Mỗi đội có tối đa ba thành viên.',
+              'Sinh viên và các bạn trẻ yêu công nghệ, quan tâm phát triển phần mềm, giải pháp số và tư vấn CNTT. Mỗi đội gồm ba thành viên.',
           },
           {
             question: 'Có thể đổi thành viên sau đăng ký không?',

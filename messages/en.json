@@ -31,15 +31,11 @@
       "organizers": "Organizers",
       "eventPartner": "Event Partner",
       "summary": "Step into the role of an IT Consultant—from understanding a business problem to building, adapting, and pitching a working product.",
-      "highlights": [
-        "Up to three per team",
-        "Real project case",
-        "Responsible AI"
-      ],
+      "highlights": ["Teams of three", "Real project case", "Responsible AI"],
       "intro": [
         "The <bold>IT Consultant Challenge</bold> is a team-based competition where participants step into the role of <bold>IT Consultants</bold> to solve real business challenges through responsible digital solutions.",
         "Following two successful seasons in <bold>2024</bold> and <bold>2025</bold>, the challenge returns with a brand-new format and the theme <bold>\"Prompt to Production.\"</bold> As AI continues to transform the way software is built, today's software developers need more than the ability to write code. They need to understand business needs, work effectively with AI, make informed technical decisions, and deliver solutions they can confidently stand behind.",
-        "In teams of <bold>up to three</bold>, participants will tackle a case study inspired by a real-life project. Throughout the competition, you'll experience the journey of an IT consultant - from understanding business problems and designing a solution to building a working product, adapting to changing requirements, and presenting your final delivery."
+        "In teams of <bold>three</bold>, participants will tackle a case study inspired by a real-life project. Throughout the competition, you'll experience the journey of an IT consultant - from understanding business problems and designing a solution to building a working product, adapting to changing requirements, and presenting your final delivery."
       ],
       "cards": [
         {
@@ -52,7 +48,7 @@
         }
       ],
       "description": [
-        "The <extrabold>{contestName}</extrabold> is an engaging team-based competition where participants step into the role of IT consultants. In teams of up to three, you are tasked with solving real-life IT problems by developing innovative, digitalized solutions for a client. This challenge simulates the dynamic environment of IT consulting, requiring teams to collaborate, think critically, and deliver impactful solutions that meet client needs.",
+        "The <extrabold>{contestName}</extrabold> is an engaging team-based competition where participants step into the role of IT consultants. In teams of three, you are tasked with solving real-life IT problems by developing innovative, digitalized solutions for a client. This challenge simulates the dynamic environment of IT consulting, requiring teams to collaborate, think critically, and deliver impactful solutions that meet client needs.",
         "The event is jointly organized by {netcompanyName} Vietnam and {codeMelyName} - a Tech community for young enthusiasts."
       ],
       "miniChallenge": "[MINI-CHALLENGE] AI FOR LIFE – AI IDEA CHALLENGE IN DAILY LIFE",
@@ -263,7 +259,7 @@
         "email": {
           "label": "Email"
         },
-        "note": "(*) Each team consists of up to 3 members."
+        "note": "(*) Each team consists of 3 members."
       },
       "submit": "Submit",
       "success": {
@@ -344,7 +340,7 @@
         },
         {
           "question": "How many members are on a team?",
-          "answer": "Each team has up to 3 members who are students or young technology enthusiasts interested in software development and IT consulting."
+          "answer": "Each team has 3 members who are students or young technology enthusiasts interested in software development and IT consulting."
         },
         {
           "question": "Is the competition online or onsite?",
