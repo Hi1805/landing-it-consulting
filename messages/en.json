@@ -167,9 +167,9 @@
     "timeCounter": {
       "eyebrow": "Registration deadline",
       "title": "Registration closes in",
-      "deadline": "End of 18 Oct 2026 · Vietnam time",
+      "deadline": "15 Oct 2026 · Vietnam time",
       "titleClosed": "Event time",
-      "closedDescription": "Thank you for your interest in IT Consultant Challenge 2026.",
+      "closedDescription": "Registration is closed because the event has reached participant capacity. Thank you for your interest in IT Consultant Challenge 2026.",
       "days": "days",
       "hours": "hours",
       "minutes": "minutes",
@@ -269,7 +269,7 @@
       },
       "closed": {
         "title": "Registration is now closed!",
-        "content": "We're thrilled by the overwhelming response. See you at the event!"
+        "content": "We have reached participant capacity. Thank you for your interest, and see you at the event!"
       },
       "failed": {
         "inputError": "Input form has errors, please check again!",

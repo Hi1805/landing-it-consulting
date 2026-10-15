@@ -13,7 +13,7 @@ export enum SECTION_IDS {
   VIDEO_RECAP = 'video-recap',
 }
 
-// Registration remains open through 18 October 2026 in Vietnam (UTC+7).
-export const REGISTRATION_CLOSE_DATE = new Date('2026-10-19T00:00:00+07:00');
+// Registration closed on 15 October 2026 in Vietnam (UTC+7) after reaching capacity.
+export const REGISTRATION_CLOSE_DATE = new Date('2026-10-15T00:00:00+07:00');
 // The official event date has not been announced yet.
 export const EVENT_START_DATE = REGISTRATION_CLOSE_DATE;

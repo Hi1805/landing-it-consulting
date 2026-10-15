@@ -70,7 +70,7 @@ export default function TimeCounter({ locale: _locale }: TimeCounterProps) {
                   </h2>
                   <div className='mt-5 inline-flex items-center gap-2 text-sm font-semibold text-primary'>
                     <CalendarDays className='h-4 w-4' aria-hidden='true' />
-                    <time dateTime='2026-10-19T00:00:00+07:00'>
+                    <time dateTime='2026-10-15T00:00:00+07:00'>
                       {t('timeCounter.deadline')}
                     </time>
                   </div>
